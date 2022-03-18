@@ -1,0 +1,666 @@
+<!doctype html>
+<html lang="en"><!-- InstanceBegin template="/Templates/marketing-pages.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- InstanceBeginEditable name="doctitle" -->
+    <title>UberBooty.App</title>
+    <!-- InstanceEndEditable -->
+    <!-- Bootstrap CSS -->
+	<link href="assets/css/bootstrap.css" rel="stylesheet" type="text/css">
+	<!--IEA Styles -->
+	<link href="iea-styles.css" rel="stylesheet" type="text/css">
+	<!--Font Scripts-->
+	<style>
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&display=swap');
+</style>
+	<!--End Font Scripts-->
+<!-- InstanceBeginEditable name="head" -->
+<!-- InstanceEndEditable -->
+</head>
+<body>
+<header>
+   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+   <div class="container">
+   <a class="navbar-brand" href="#">UberBooty</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="browse-escorts.html">Browse Escorts</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="memberships.html">Memberships</a>
+        </li>
+		<li class="nav-item">
+          <a class="nav-link" href="#">Boober</a>
+        </li>
+		  <li class="nav-item">
+          <a class="nav-link" href="memberships.html">Register</a>
+        </li>
+		  <li class="nav-item">
+          <a class="nav-link" href="#">Login</a>
+        </li>
+      </ul>
+		
+		
+		<!--Search Button-->
+		<button class="btn btn-outline-light nav-btn-padding" type="button" data-bs-toggle="offcanvas" data-bs-target="#advancedSearch" aria-controls="advancedSearch">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+  			<path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+		  </svg>
+			<span class="nav-balance nav-btn-text">
+			Search
+			</span>
+        </button>
+		<!--QR Scanner/Input Wallet Information-->
+        <button class="btn btn-outline-warning nav-btn-padding" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-qr-code-scan" viewBox="0 0 16 16">
+  			<path d="M0 .5A.5.5 0 0 1 .5 0h3a.5.5 0 0 1 0 1H1v2.5a.5.5 0 0 1-1 0v-3Zm12 0a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0V1h-2.5a.5.5 0 0 1-.5-.5ZM.5 12a.5.5 0 0 1 .5.5V15h2.5a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5v-3a.5.5 0 0 1 .5-.5Zm15 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1 0-1H15v-2.5a.5.5 0 0 1 .5-.5ZM4 4h1v1H4V4Z"/>
+  			<path d="M7 2H2v5h5V2ZM3 3h3v3H3V3Zm2 8H4v1h1v-1Z"/>
+  			<path d="M7 9H2v5h5V9Zm-4 1h3v3H3v-3Zm8-6h1v1h-1V4Z"/>
+  			<path d="M9 2h5v5H9V2Zm1 1v3h3V3h-3ZM8 8v2h1v1H8v1h2v-2h1v2h1v-1h2v-1h-3V8H8Zm2 2H9V9h1v1Zm4 2h-1v1h-2v1h3v-2Zm-4 2v-1H8v1h2Z"/>
+  			<path d="M12 9h2V8h-2v1Z"/>
+</svg>
+			<span class="nav-balance nav-btn-text">
+			QR Scanner
+			</span>
+        </button>
+		<!--Purchase Tokens-->
+		<button type="button" class="btn btn-outline-info nav-btn-padding">
+		<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-coin" viewBox="0 0 16 16">
+  			<path d="M5.5 9.511c.076.954.83 1.697 2.182 1.785V12h.6v-.709c1.4-.098 2.218-.846 2.218-1.932 0-.987-.626-1.496-1.745-1.76l-.473-.112V5.57c.6.068.982.396 1.074.85h1.052c-.076-.919-.864-1.638-2.126-1.716V4h-.6v.719c-1.195.117-2.01.836-2.01 1.853 0 .9.606 1.472 1.613 1.707l.397.098v2.034c-.615-.093-1.022-.43-1.114-.9H5.5zm2.177-2.166c-.59-.137-.91-.416-.91-.836 0-.47.345-.822.915-.925v1.76h-.005zm.692 1.193c.717.166 1.048.435 1.048.91 0 .542-.412.914-1.135.982V8.518l.087.02z"/>
+  			<path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+  			<path d="M8 13.5a5.5 5.5 0 1 1 0-11 5.5 5.5 0 0 1 0 11zm0 .5A6 6 0 1 0 8 2a6 6 0 0 0 0 12z"/>
+		</svg>
+			<span class="nav-balance nav-btn-text">
+			Tokens
+			</span>
+		</button>
+		
+      	
+		
+    </div>
+  </div>
+</nav>
+    </header>
+	  <!-- InstanceBeginEditable name="Page-Content" -->
+	<section id="welcome-to-the-club">
+	 <div class="container col-xl-10 col-xxl-8 px-4 py-5">
+    <div class="row align-items-center g-lg-5 py-5">
+      <div class="col-lg-7 text-center text-lg-start">
+        <div class="uberbooty-intro-card">
+		 <h1 class="display-4 fw-bold lh-1 mb-3"><code>Welcome to {"The Club"}</code></h1>
+
+        <p class="col-lg-12" style="margin-top: -5px;">The First Rule of Fight Club.. Using {The Clubs}  Suite of Services, enable you to browse, connect, and receive real-time quotes, just think of the simplicity of booking an Uber. Our Seekers get an instant notification of the quote with a push notification letting them decide to connect through The Club Messenger.
+		<br><br>	
+		Sincerly, Tyler Durden
+		</p>
+
+		  <div class="intro-button-group text-center">
+			<button class="btn btn-outline-info btn-lg col-5" type="button">Search</button>
+		  <button class="btn btn-outline-warning btn-lg col-5" type="button">Club Benefits</button>
+		  </div>  
+		</div>
+      </div>
+      <div class="col-md-10 mx-auto col-lg-5">
+        <form class="p-4 p-md-5 border rounded-3 trans-card-bg">
+          <div class="form-floating mb-3">
+            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+            <label for="floatingInput">Email address</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+            <label for="floatingPassword">Password</label>
+          </div>
+          <div class="checkbox mb-3">
+            <label>
+              <input type="checkbox" value="remember-me"> Remember me
+            </label>
+          </div>
+          <button class="w-100 btn btn-lg btn-outline-primary" type="submit">Join The Club</button>
+          <hr class="my-4">
+          <small class="text-muted">By clicking Join the club, you agree to the terms of use.</small>
+        </form>
+      </div>
+    </div>
+  </div>
+	</section>
+	<section id="uberbooty-associates">
+	 <div class="container px-4 py-5" id="featured-3">
+    <h2 class="pb-2 border-bottom">Ultimate Connections Platform</h2>
+    <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+      <div class="feature col">
+        <h2><strong>Join The Club</strong></h2>
+<p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+        <a href="#" class="icon-link">
+          Join "The Club"
+          <svg class="bi" width="1em" height="1em"><use xlink:href="#chevron-right"></use></svg>
+        </a>
+      </div>
+      <div class="feature col">
+        <h2><strong>Purchase Tokens</strong></h2>
+<p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+        <a href="#" class="icon-link">
+          Purchase UB Tokens
+<svg class="bi" width="1em" height="1em"><use xlink:href="#chevron-right"></use></svg>
+        </a>
+      </div>
+      <div class="feature col">
+        <h2>Connect Digitally</h2>
+        <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+        <a href="#" class="icon-link">
+          Connect With UB Messenger
+          <svg class="bi" width="1em" height="1em"><use xlink:href="#chevron-right"></use></svg>
+        </a>
+      </div>
+    </div>
+		 
+  </div>
+	</section>
+<div class="container"><h2 class="pb-2">Recently Active Seekers</h2>
+	  <div class="row">
+		<div class="col-sm-4">
+			<div class="search-bar-select">
+		 <label for="DataList" class="form-label">Location</label>
+			<input class="form-control" list="datalistOptions" id="DataList" placeholder="City or Zip Code...">
+			<datalist id="datalistOptions">
+				<option value="Philadelphia">Philadelphia</option>
+  			<option value="San Francisco"></option>
+  			<option value="New York"></option>
+  			<option value="Seattle"></option>
+  			<option value="Los Angeles"></option>
+			<option value="Chicago"></option>
+			</datalist>
+			</div>
+		</div>
+		  <div class="col-sm-3">
+			  <label for="Proximity" class="form-label">Distance</label>
+		   <select class="form-select" aria-label="Proxitmity">
+  <option selected>Proximity</option>
+  <option value="1">25 Miles</option>
+  <option value="2">50 Miles</option>
+  <option value="3">100 Miles</option>
+</select>
+		  </div>
+		  <div class="col-sm-3">
+			  <label for="Gender" class="form-label">Gender</label>
+		   <select class="form-select" aria-label="Gender Reveal">
+  <option selected>Select Gender</option>
+  <option value="1">Male</option>
+  <option value="2">Female</option>
+  <option value="3">Trans</option>
+			   <option value="4">Non-Binary</option>
+</select>
+		  </div>
+		  <div class="col-sm-2">
+			  <label for="Gender" class="form-label">Start Search!</label>
+		   <button type="button" class="btn btn-outline-info form-control">Search </button>
+		  </div>
+	  </div>	
+	 </div>
+
+	<section id="recently-active-home">
+    
+		<div class="container">
+			<div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+      <div class="col">
+        <div class="user-intro-card card card-cover  overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: -webkit-linear-gradient(270deg,rgba(0,0,0,0.68) 0%,rgba(116,28,28,0.61) 100%), url('unsplash-photo-3.jpg'); background-image: -moz-linear-gradient(270deg,rgba(0,0,0,0.68) 0%,rgba(116,28,28,0.61) 100%), url('assets/img/uber-booty-only-fans/0mbs6moxak381.jpg'); background-image: -o-linear-gradient(270deg,rgba(0,0,0,0.68) 0%,rgba(116,28,28,0.61) 100%), url('assets/img/uber-booty-only-fans/0mbs6moxak381.jpg'); background-image: linear-gradient(180deg,rgba(0,0,0,0.68) 0%,rgba(116,28,28,0.61) 100%), url('assets/img/uber-booty-only-fans/0mbs6moxak381.jpg'); background-position: center top;">
+          <div class="d-flex flex-column text-white text-shadow-1">
+            <h2 class="user-intro-name display-6 lh-1 fw-bold">Amber Rose</h2>
+			  <span class="badge rounded-pill bg-info text-dark type-badge">Seeker</span>
+           <ul class="user-intro-info d-flex list-unstyled mt-auto">
+              <li class="me-auto user-intro-avatar">
+                <img src="assets/img/uber-booty-only-fans/Iu5r8BBMH2p-f3Tkd4tYibrhxuh_sGqgr1A_A5JLQtI.jpg" alt="Bootstrap" width="32" height="32" class="me-2 rounded-circle border border-white">
+              </li>
+              <li class="d-flex align-items-center me-3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi me-2 bi-geo-fill" viewBox="0 0 16 16">
+  				<path fill-rule="evenodd" d="M4 4a4 4 0 1 1 4.5 3.969V13.5a.5.5 0 0 1-1 0V7.97A4 4 0 0 1 4 3.999zm2.493 8.574a.5.5 0 0 1-.411.575c-.712.118-1.28.295-1.655.493a1.319 1.319 0 0 0-.37.265.301.301 0 0 0-.057.09V14l.002.008a.147.147 0 0 0 .016.033.617.617 0 0 0 .145.15c.165.13.435.27.813.395.751.25 1.82.414 3.024.414s2.273-.163 3.024-.414c.378-.126.648-.265.813-.395a.619.619 0 0 0 .146-.15.148.148 0 0 0 .015-.033L12 14v-.004a.301.301 0 0 0-.057-.09 1.318 1.318 0 0 0-.37-.264c-.376-.198-.943-.375-1.655-.493a.5.5 0 1 1 .164-.986c.77.127 1.452.328 1.957.594C12.5 13 13 13.4 13 14c0 .426-.26.752-.544.977-.29.228-.68.413-1.116.558-.878.293-2.059.465-3.34.465-1.281 0-2.462-.172-3.34-.465-.436-.145-.826-.33-1.116-.558C3.26 14.752 3 14.426 3 14c0-.599.5-1 .961-1.243.505-.266 1.187-.467 1.957-.594a.5.5 0 0 1 .575.411z"/>
+				</svg>
+                <small>Philadelphia,PA</small>
+              </li>
+              <li class="d-flex align-items-center">
+               <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi me-2 " viewBox="0 0 16 16">
+  				<path d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857V3.857z"/>
+  				<path d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+				</svg>
+                <small>4min</small>
+              </li>
+				<li class="d-flex align-items-center  ">
+					<!-- Button trigger modal -->
+<button type="button" class="btn btn-outline-info" style="margin-left: 10px;" data-bs-toggle="modal" data-bs-target="#userQrLinkModal">
+  <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" fill="currentColor" class="bi bi-qr-code" viewBox="0 0 16 16">
+  			 <path d="M2 2h2v2H2V2Z"/>
+  			 <path d="M6 0v6H0V0h6ZM5 1H1v4h4V1ZM4 12H2v2h2v-2Z"/>
+  			<path d="M6 10v6H0v-6h6Zm-5 1v4h4v-4H1Zm11-9h2v2h-2V2Z"/>
+  			<path d="M10 0v6h6V0h-6Zm5 1v4h-4V1h4ZM8 1V0h1v2H8v2H7V1h1Zm0 5V4h1v2H8ZM6 8V7h1V6h1v2h1V7h5v1h-4v1H7V8H6Zm0 0v1H2V8H1v1H0V7h3v1h3Zm10 1h-1V7h1v2Zm-1 0h-1v2h2v-1h-1V9Zm-4 0h2v1h-1v1h-1V9Zm2 3v-1h-1v1h-1v1H9v1h3v-2h1Zm0 0h3v1h-2v1h-1v-2Zm-4-1v1h1v-2H7v1h2Z"/>
+  			<path d="M7 12h1v3h4v1H7v-4Zm9 2v2h-3v-1h2v-1h1Z"/>
+			</svg>
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="userQrLinkModal" tabindex="-1" aria-labelledby="userQrLinkModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 style="color: #000000;" class="modal-title" id="userQrLinkModalLabel">Scan QR with UB Messenger</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="assets/img/qr/purchase-messenger/uberbooty-messenger-purchase-link.png" width="100%" height="auto" alt=""/> </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">Add Tokens</button>
+        <button type="button" class="btn btn-outline-info">Purchase UB Messenger to Connect</button>
+      </div>
+    </div>
+  </div>
+</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+<div class="col">
+        <div class="user-intro-card card card-cover  overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: -webkit-linear-gradient(270deg,rgba(0,0,0,0.68) 0%,rgba(116,28,28,0.61) 100%), url('unsplash-photo-3.jpg'); background-image: -moz-linear-gradient(270deg,rgba(0,0,0,0.68) 0%,rgba(116,28,28,0.61) 100%), url('assets/img/uber-booty-only-fans/Iu5r8BBMH2p-f3Tkd4tYibrhxuh_sGqgr1A_A5JLQtI.jpg'); background-image: -o-linear-gradient(270deg,rgba(0,0,0,0.68) 0%,rgba(116,28,28,0.61) 100%), url('assets/img/uber-booty-only-fans/Iu5r8BBMH2p-f3Tkd4tYibrhxuh_sGqgr1A_A5JLQtI.jpg'); background-image: linear-gradient(180deg,rgba(0,0,0,0.68) 0%,rgba(116,28,28,0.61) 100%), url('assets/img/uber-booty-only-fans/Iu5r8BBMH2p-f3Tkd4tYibrhxuh_sGqgr1A_A5JLQtI.jpg'); background-position: center top;">
+          <div class="d-flex flex-column text-white text-shadow-1">
+            <h2 class="user-intro-name display-6 lh-1 fw-bold">Jenna Beans</h2>
+			  <span class="badge rounded-pill bg-info text-dark type-badge">Seeker</span>
+            <ul class="user-intro-info d-flex list-unstyled mt-auto">
+              <li class="me-auto user-intro-avatar">
+                <img src="assets/img/uber-booty-only-fans/Iu5r8BBMH2p-f3Tkd4tYibrhxuh_sGqgr1A_A5JLQtI.jpg" alt="Bootstrap" width="32" height="32" class="me-2 rounded-circle border border-white">
+              </li>
+              <li class="d-flex align-items-center me-3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi me-2 bi-geo-fill" viewBox="0 0 16 16">
+  				<path fill-rule="evenodd" d="M4 4a4 4 0 1 1 4.5 3.969V13.5a.5.5 0 0 1-1 0V7.97A4 4 0 0 1 4 3.999zm2.493 8.574a.5.5 0 0 1-.411.575c-.712.118-1.28.295-1.655.493a1.319 1.319 0 0 0-.37.265.301.301 0 0 0-.057.09V14l.002.008a.147.147 0 0 0 .016.033.617.617 0 0 0 .145.15c.165.13.435.27.813.395.751.25 1.82.414 3.024.414s2.273-.163 3.024-.414c.378-.126.648-.265.813-.395a.619.619 0 0 0 .146-.15.148.148 0 0 0 .015-.033L12 14v-.004a.301.301 0 0 0-.057-.09 1.318 1.318 0 0 0-.37-.264c-.376-.198-.943-.375-1.655-.493a.5.5 0 1 1 .164-.986c.77.127 1.452.328 1.957.594C12.5 13 13 13.4 13 14c0 .426-.26.752-.544.977-.29.228-.68.413-1.116.558-.878.293-2.059.465-3.34.465-1.281 0-2.462-.172-3.34-.465-.436-.145-.826-.33-1.116-.558C3.26 14.752 3 14.426 3 14c0-.599.5-1 .961-1.243.505-.266 1.187-.467 1.957-.594a.5.5 0 0 1 .575.411z"/>
+				</svg>
+                <small>Savannah,GA</small>
+              </li>
+              <li class="d-flex align-items-center">
+               <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi me-2 " viewBox="0 0 16 16">
+  				<path d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857V3.857z"/>
+  				<path d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+				</svg>
+                <small>4d</small>
+              </li>
+				<li class="d-flex align-items-center  ">
+					<!-- Button trigger modal -->
+<button type="button" class="btn btn-outline-info" style="margin-left: 10px;" data-bs-toggle="modal" data-bs-target="#userQrLinkModal">
+  <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" fill="currentColor" class="bi bi-qr-code" viewBox="0 0 16 16">
+  			 <path d="M2 2h2v2H2V2Z"/>
+  			 <path d="M6 0v6H0V0h6ZM5 1H1v4h4V1ZM4 12H2v2h2v-2Z"/>
+  			<path d="M6 10v6H0v-6h6Zm-5 1v4h4v-4H1Zm11-9h2v2h-2V2Z"/>
+  			<path d="M10 0v6h6V0h-6Zm5 1v4h-4V1h4ZM8 1V0h1v2H8v2H7V1h1Zm0 5V4h1v2H8ZM6 8V7h1V6h1v2h1V7h5v1h-4v1H7V8H6Zm0 0v1H2V8H1v1H0V7h3v1h3Zm10 1h-1V7h1v2Zm-1 0h-1v2h2v-1h-1V9Zm-4 0h2v1h-1v1h-1V9Zm2 3v-1h-1v1h-1v1H9v1h3v-2h1Zm0 0h3v1h-2v1h-1v-2Zm-4-1v1h1v-2H7v1h2Z"/>
+  			<path d="M7 12h1v3h4v1H7v-4Zm9 2v2h-3v-1h2v-1h1Z"/>
+			</svg>
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="userQrLinkModal" tabindex="-1" aria-labelledby="userQrLinkModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 style="color: #000000;" class="modal-title" id="userQrLinkModalLabel">Scan QR with UB Messenger</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="assets/img/qr/purchase-messenger/uberbooty-messenger-purchase-link.png" width="100%" height="auto" alt=""/> </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">Add Tokens</button>
+        <button type="button" class="btn btn-outline-info">Purchase UB Messenger to Connect</button>
+      </div>
+    </div>
+  </div>
+</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+<div class="col">
+        <div class="user-intro-card card card-cover  overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: -webkit-linear-gradient(270deg,rgba(0,0,0,0.68) 0%,rgba(116,28,28,0.61) 100%), url('unsplash-photo-3.jpg'); background-image: -moz-linear-gradient(270deg,rgba(0,0,0,0.68) 0%,rgba(116,28,28,0.61) 100%), url('assets/img/uber-booty-only-fans/ybrtglx8ej381.jpg'); background-image: -o-linear-gradient(270deg,rgba(0,0,0,0.68) 0%,rgba(116,28,28,0.61) 100%), url('assets/img/uber-booty-only-fans/ybrtglx8ej381.jpg'); background-image: linear-gradient(180deg,rgba(0,0,0,0.68) 0%,rgba(116,28,28,0.61) 100%), url('assets/img/uber-booty-only-fans/ybrtglx8ej381.jpg'); background-position: center top;">
+          <div class="d-flex flex-column text-shadow-1">
+            <h2  class="user-intro-name display-6 lh-1 fw-bold">Sally Sucks</h2>
+			  <span class="badge rounded-pill bg-info text-dark type-badge">Seeker</span>
+           <ul class="user-intro-info d-flex list-unstyled mt-auto">
+              <li class="me-auto user-intro-avatar">
+                <img src="assets/img/uber-booty-only-fans/Iu5r8BBMH2p-f3Tkd4tYibrhxuh_sGqgr1A_A5JLQtI.jpg" alt="Bootstrap" width="32" height="32" class="me-2 rounded-circle border border-white">
+              </li>
+              <li class="d-flex align-items-center me-3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi me-2 bi-geo-fill" viewBox="0 0 16 16">
+  				<path fill-rule="evenodd" d="M4 4a4 4 0 1 1 4.5 3.969V13.5a.5.5 0 0 1-1 0V7.97A4 4 0 0 1 4 3.999zm2.493 8.574a.5.5 0 0 1-.411.575c-.712.118-1.28.295-1.655.493a1.319 1.319 0 0 0-.37.265.301.301 0 0 0-.057.09V14l.002.008a.147.147 0 0 0 .016.033.617.617 0 0 0 .145.15c.165.13.435.27.813.395.751.25 1.82.414 3.024.414s2.273-.163 3.024-.414c.378-.126.648-.265.813-.395a.619.619 0 0 0 .146-.15.148.148 0 0 0 .015-.033L12 14v-.004a.301.301 0 0 0-.057-.09 1.318 1.318 0 0 0-.37-.264c-.376-.198-.943-.375-1.655-.493a.5.5 0 1 1 .164-.986c.77.127 1.452.328 1.957.594C12.5 13 13 13.4 13 14c0 .426-.26.752-.544.977-.29.228-.68.413-1.116.558-.878.293-2.059.465-3.34.465-1.281 0-2.462-.172-3.34-.465-.436-.145-.826-.33-1.116-.558C3.26 14.752 3 14.426 3 14c0-.599.5-1 .961-1.243.505-.266 1.187-.467 1.957-.594a.5.5 0 0 1 .575.411z"/>
+				</svg>
+                <small>Denver,CO</small>
+              </li>
+              <li class="d-flex align-items-center">
+               <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi me-2 " viewBox="0 0 16 16">
+  				<path d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857V3.857z"/>
+  				<path d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+				</svg>
+                <small>12hr</small>
+              </li>
+				<li class="d-flex align-items-center  ">
+					<!-- Button trigger modal -->
+<button type="button" class="btn btn-outline-info" style="margin-left: 10px;" data-bs-toggle="modal" data-bs-target="#userQrLinkModal">
+  <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" fill="currentColor" class="bi bi-qr-code" viewBox="0 0 16 16">
+  			 <path d="M2 2h2v2H2V2Z"/>
+  			 <path d="M6 0v6H0V0h6ZM5 1H1v4h4V1ZM4 12H2v2h2v-2Z"/>
+  			<path d="M6 10v6H0v-6h6Zm-5 1v4h4v-4H1Zm11-9h2v2h-2V2Z"/>
+  			<path d="M10 0v6h6V0h-6Zm5 1v4h-4V1h4ZM8 1V0h1v2H8v2H7V1h1Zm0 5V4h1v2H8ZM6 8V7h1V6h1v2h1V7h5v1h-4v1H7V8H6Zm0 0v1H2V8H1v1H0V7h3v1h3Zm10 1h-1V7h1v2Zm-1 0h-1v2h2v-1h-1V9Zm-4 0h2v1h-1v1h-1V9Zm2 3v-1h-1v1h-1v1H9v1h3v-2h1Zm0 0h3v1h-2v1h-1v-2Zm-4-1v1h1v-2H7v1h2Z"/>
+  			<path d="M7 12h1v3h4v1H7v-4Zm9 2v2h-3v-1h2v-1h1Z"/>
+			</svg>
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="userQrLinkModal" tabindex="-1" aria-labelledby="userQrLinkModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 style="color: #000000;" class="modal-title" id="userQrLinkModalLabel">Scan QR with UB Messenger</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="assets/img/qr/purchase-messenger/uberbooty-messenger-purchase-link.png" width="100%" height="auto" alt=""/> </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">Add Tokens</button>
+        <button type="button" class="btn btn-outline-info">Purchase UB Messenger to Connect</button>
+      </div>
+    </div>
+  </div>
+</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+		 <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+      <div class="col">
+        <div class="user-intro-card card card-cover  overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: -webkit-linear-gradient(270deg,rgba(0,0,0,0.68) 0%,rgba(116,28,28,0.61) 100%), url('unsplash-photo-3.jpg'); background-image: -moz-linear-gradient(270deg,rgba(0,0,0,0.68) 0%,rgba(116,28,28,0.61) 100%), url('assets/img/seeker/lilly.jpg'); background-image: -o-linear-gradient(270deg,rgba(0,0,0,0.68) 0%,rgba(116,28,28,0.61) 100%), url('assets/img/seeker/lilly.jpg'); background-image: linear-gradient(180deg,rgba(0,0,0,0.68) 0%,rgba(116,28,28,0.61) 100%), url('assets/img/seeker/lilly.jpg'); background-position: center top;">
+          <div class="d-flex flex-column text-white text-shadow-1">
+            <h2 class="user-intro-name display-6 lh-1 fw-bold">Emma Jean</h2>
+			  <span class="badge rounded-pill bg-info text-dark type-badge">Seeker</span>
+         <ul class="user-intro-info d-flex list-unstyled mt-auto">
+              <li class="me-auto user-intro-avatar">
+                <img src="assets/img/uber-booty-only-fans/Iu5r8BBMH2p-f3Tkd4tYibrhxuh_sGqgr1A_A5JLQtI.jpg" alt="Bootstrap" width="32" height="32" class="me-2 rounded-circle border border-white">
+              </li>
+              <li class="d-flex align-items-center me-3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi me-2 bi-geo-fill" viewBox="0 0 16 16">
+  				<path fill-rule="evenodd" d="M4 4a4 4 0 1 1 4.5 3.969V13.5a.5.5 0 0 1-1 0V7.97A4 4 0 0 1 4 3.999zm2.493 8.574a.5.5 0 0 1-.411.575c-.712.118-1.28.295-1.655.493a1.319 1.319 0 0 0-.37.265.301.301 0 0 0-.057.09V14l.002.008a.147.147 0 0 0 .016.033.617.617 0 0 0 .145.15c.165.13.435.27.813.395.751.25 1.82.414 3.024.414s2.273-.163 3.024-.414c.378-.126.648-.265.813-.395a.619.619 0 0 0 .146-.15.148.148 0 0 0 .015-.033L12 14v-.004a.301.301 0 0 0-.057-.09 1.318 1.318 0 0 0-.37-.264c-.376-.198-.943-.375-1.655-.493a.5.5 0 1 1 .164-.986c.77.127 1.452.328 1.957.594C12.5 13 13 13.4 13 14c0 .426-.26.752-.544.977-.29.228-.68.413-1.116.558-.878.293-2.059.465-3.34.465-1.281 0-2.462-.172-3.34-.465-.436-.145-.826-.33-1.116-.558C3.26 14.752 3 14.426 3 14c0-.599.5-1 .961-1.243.505-.266 1.187-.467 1.957-.594a.5.5 0 0 1 .575.411z"/>
+				</svg>
+                <small>Tybee Island,GA</small>
+              </li>
+              <li class="d-flex align-items-center">
+               <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi me-2 " viewBox="0 0 16 16">
+  				<path d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857V3.857z"/>
+  				<path d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+				</svg>
+                <small>2d</small>
+              </li>
+				<li class="d-flex align-items-center  ">
+					<!-- Button trigger modal -->
+<button type="button" class="btn btn-outline-info" style="margin-left: 10px;" data-bs-toggle="modal" data-bs-target="#userQrLinkModal">
+  <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" fill="currentColor" class="bi bi-qr-code" viewBox="0 0 16 16">
+  			 <path d="M2 2h2v2H2V2Z"/>
+  			 <path d="M6 0v6H0V0h6ZM5 1H1v4h4V1ZM4 12H2v2h2v-2Z"/>
+  			<path d="M6 10v6H0v-6h6Zm-5 1v4h4v-4H1Zm11-9h2v2h-2V2Z"/>
+  			<path d="M10 0v6h6V0h-6Zm5 1v4h-4V1h4ZM8 1V0h1v2H8v2H7V1h1Zm0 5V4h1v2H8ZM6 8V7h1V6h1v2h1V7h5v1h-4v1H7V8H6Zm0 0v1H2V8H1v1H0V7h3v1h3Zm10 1h-1V7h1v2Zm-1 0h-1v2h2v-1h-1V9Zm-4 0h2v1h-1v1h-1V9Zm2 3v-1h-1v1h-1v1H9v1h3v-2h1Zm0 0h3v1h-2v1h-1v-2Zm-4-1v1h1v-2H7v1h2Z"/>
+  			<path d="M7 12h1v3h4v1H7v-4Zm9 2v2h-3v-1h2v-1h1Z"/>
+			</svg>
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="userQrLinkModal" tabindex="-1" aria-labelledby="userQrLinkModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 style="color: #000000;" class="modal-title" id="userQrLinkModalLabel">Scan QR with UB Messenger</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="assets/img/qr/purchase-messenger/uberbooty-messenger-purchase-link.png" width="100%" height="auto" alt=""/> </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">Add Tokens</button>
+        <button type="button" class="btn btn-outline-info">Purchase UB Messenger to Connect</button>
+      </div>
+    </div>
+  </div>
+</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+<div class="col">
+        <div class="user-intro-card card card-cover  overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: -webkit-linear-gradient(270deg,rgba(0,0,0,0.68) 0%,rgba(116,28,28,0.61) 100%), url('unsplash-photo-3.jpg'); background-image: -moz-linear-gradient(270deg,rgba(0,0,0,0.68) 0%,rgba(116,28,28,0.61) 100%), url('assets/img/seeker/seeker-1.webp'); background-image: -o-linear-gradient(270deg,rgba(0,0,0,0.68) 0%,rgba(116,28,28,0.61) 100%), url('assets/img/seeker/seeker-1.webp'); background-image: linear-gradient(180deg,rgba(0,0,0,0.68) 0%,rgba(116,28,28,0.61) 100%), url('assets/img/seeker/seeker-1.webp'); background-position: center top;">
+          <div class="d-flex flex-column text-white text-shadow-1">
+            <h2 class="user-intro-name display-6 lh-1 fw-bold">Molly Muse</h2>
+			  <span class="badge rounded-pill bg-info text-dark type-badge">Seeker</span>
+        <ul class="user-intro-info d-flex list-unstyled mt-auto">
+              <li class="me-auto user-intro-avatar">
+                <img src="assets/img/uber-booty-only-fans/Iu5r8BBMH2p-f3Tkd4tYibrhxuh_sGqgr1A_A5JLQtI.jpg" alt="Bootstrap" width="32" height="32" class="me-2 rounded-circle border border-white">
+              </li>
+              <li class="d-flex align-items-center me-3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi me-2 bi-geo-fill" viewBox="0 0 16 16">
+  				<path fill-rule="evenodd" d="M4 4a4 4 0 1 1 4.5 3.969V13.5a.5.5 0 0 1-1 0V7.97A4 4 0 0 1 4 3.999zm2.493 8.574a.5.5 0 0 1-.411.575c-.712.118-1.28.295-1.655.493a1.319 1.319 0 0 0-.37.265.301.301 0 0 0-.057.09V14l.002.008a.147.147 0 0 0 .016.033.617.617 0 0 0 .145.15c.165.13.435.27.813.395.751.25 1.82.414 3.024.414s2.273-.163 3.024-.414c.378-.126.648-.265.813-.395a.619.619 0 0 0 .146-.15.148.148 0 0 0 .015-.033L12 14v-.004a.301.301 0 0 0-.057-.09 1.318 1.318 0 0 0-.37-.264c-.376-.198-.943-.375-1.655-.493a.5.5 0 1 1 .164-.986c.77.127 1.452.328 1.957.594C12.5 13 13 13.4 13 14c0 .426-.26.752-.544.977-.29.228-.68.413-1.116.558-.878.293-2.059.465-3.34.465-1.281 0-2.462-.172-3.34-.465-.436-.145-.826-.33-1.116-.558C3.26 14.752 3 14.426 3 14c0-.599.5-1 .961-1.243.505-.266 1.187-.467 1.957-.594a.5.5 0 0 1 .575.411z"/>
+				</svg>
+                <small>Boston,MA</small>
+              </li>
+              <li class="d-flex align-items-center">
+               <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi me-2 " viewBox="0 0 16 16">
+  				<path d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857V3.857z"/>
+  				<path d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+				</svg>
+                <small>1d</small>
+              </li>
+				<li class="d-flex align-items-center  ">
+					<!-- Button trigger modal -->
+<button type="button" class="btn btn-outline-info" style="margin-left: 10px;" data-bs-toggle="modal" data-bs-target="#userQrLinkModal">
+  <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" fill="currentColor" class="bi bi-qr-code" viewBox="0 0 16 16">
+  			 <path d="M2 2h2v2H2V2Z"/>
+  			 <path d="M6 0v6H0V0h6ZM5 1H1v4h4V1ZM4 12H2v2h2v-2Z"/>
+  			<path d="M6 10v6H0v-6h6Zm-5 1v4h4v-4H1Zm11-9h2v2h-2V2Z"/>
+  			<path d="M10 0v6h6V0h-6Zm5 1v4h-4V1h4ZM8 1V0h1v2H8v2H7V1h1Zm0 5V4h1v2H8ZM6 8V7h1V6h1v2h1V7h5v1h-4v1H7V8H6Zm0 0v1H2V8H1v1H0V7h3v1h3Zm10 1h-1V7h1v2Zm-1 0h-1v2h2v-1h-1V9Zm-4 0h2v1h-1v1h-1V9Zm2 3v-1h-1v1h-1v1H9v1h3v-2h1Zm0 0h3v1h-2v1h-1v-2Zm-4-1v1h1v-2H7v1h2Z"/>
+  			<path d="M7 12h1v3h4v1H7v-4Zm9 2v2h-3v-1h2v-1h1Z"/>
+			</svg>
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="userQrLinkModal" tabindex="-1" aria-labelledby="userQrLinkModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 style="color: #000000;" class="modal-title" id="userQrLinkModalLabel">Scan QR with UB Messenger</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="assets/img/qr/purchase-messenger/uberbooty-messenger-purchase-link.png" width="100%" height="auto" alt=""/> </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">Add Tokens</button>
+        <button type="button" class="btn btn-outline-info">Purchase UB Messenger to Connect</button>
+      </div>
+    </div>
+  </div>
+</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+<div class="col">
+        <div class="user-intro-card card card-cover  overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: -webkit-linear-gradient(270deg,rgba(0,0,0,0.68) 0%,rgba(116,28,28,0.61) 100%), url('unsplash-photo-3.jpg'); background-image: -moz-linear-gradient(270deg,rgba(0,0,0,0.68) 0%,rgba(116,28,28,0.61) 100%), url('assets/img/seeker/seeker-5.webp'); background-image: -o-linear-gradient(270deg,rgba(0,0,0,0.68) 0%,rgba(116,28,28,0.61) 100%), url('assets/img/seeker/seeker-5.webp'); background-image: linear-gradient(180deg,rgba(0,0,0,0.68) 0%,rgba(116,28,28,0.61) 100%), url('assets/img/seeker/seeker-5.webp'); background-position: center top;">
+          <div class="d-flex flex-column text-shadow-1">
+            <h2  class="user-intro-name display-6 lh-1 fw-bold">Cindy Scout</h2>
+			  <span class="badge rounded-pill bg-info text-dark type-badge">Seeker</span>
+         <ul class="user-intro-info d-flex list-unstyled mt-auto">
+              <li class="me-auto user-intro-avatar">
+                <img src="assets/img/uber-booty-only-fans/Iu5r8BBMH2p-f3Tkd4tYibrhxuh_sGqgr1A_A5JLQtI.jpg" alt="Bootstrap" width="32" height="32" class="me-2 rounded-circle border border-white">
+              </li>
+              <li class="d-flex align-items-center me-3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi me-2 bi-geo-fill" viewBox="0 0 16 16">
+  				<path fill-rule="evenodd" d="M4 4a4 4 0 1 1 4.5 3.969V13.5a.5.5 0 0 1-1 0V7.97A4 4 0 0 1 4 3.999zm2.493 8.574a.5.5 0 0 1-.411.575c-.712.118-1.28.295-1.655.493a1.319 1.319 0 0 0-.37.265.301.301 0 0 0-.057.09V14l.002.008a.147.147 0 0 0 .016.033.617.617 0 0 0 .145.15c.165.13.435.27.813.395.751.25 1.82.414 3.024.414s2.273-.163 3.024-.414c.378-.126.648-.265.813-.395a.619.619 0 0 0 .146-.15.148.148 0 0 0 .015-.033L12 14v-.004a.301.301 0 0 0-.057-.09 1.318 1.318 0 0 0-.37-.264c-.376-.198-.943-.375-1.655-.493a.5.5 0 1 1 .164-.986c.77.127 1.452.328 1.957.594C12.5 13 13 13.4 13 14c0 .426-.26.752-.544.977-.29.228-.68.413-1.116.558-.878.293-2.059.465-3.34.465-1.281 0-2.462-.172-3.34-.465-.436-.145-.826-.33-1.116-.558C3.26 14.752 3 14.426 3 14c0-.599.5-1 .961-1.243.505-.266 1.187-.467 1.957-.594a.5.5 0 0 1 .575.411z"/>
+				</svg>
+                <small>Pittsburg,PA</small>
+              </li>
+              <li class="d-flex align-items-center">
+               <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi me-2 " viewBox="0 0 16 16">
+  				<path d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857V3.857z"/>
+  				<path d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+				</svg>
+                <small>25min</small>
+              </li>
+				<li class="d-flex align-items-center  ">
+					<!-- Button trigger modal -->
+<button type="button" class="btn btn-outline-info" style="margin-left: 10px;" data-bs-toggle="modal" data-bs-target="#userQrLinkModal">
+  <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" fill="currentColor" class="bi bi-qr-code" viewBox="0 0 16 16">
+  			 <path d="M2 2h2v2H2V2Z"/>
+  			 <path d="M6 0v6H0V0h6ZM5 1H1v4h4V1ZM4 12H2v2h2v-2Z"/>
+  			<path d="M6 10v6H0v-6h6Zm-5 1v4h4v-4H1Zm11-9h2v2h-2V2Z"/>
+  			<path d="M10 0v6h6V0h-6Zm5 1v4h-4V1h4ZM8 1V0h1v2H8v2H7V1h1Zm0 5V4h1v2H8ZM6 8V7h1V6h1v2h1V7h5v1h-4v1H7V8H6Zm0 0v1H2V8H1v1H0V7h3v1h3Zm10 1h-1V7h1v2Zm-1 0h-1v2h2v-1h-1V9Zm-4 0h2v1h-1v1h-1V9Zm2 3v-1h-1v1h-1v1H9v1h3v-2h1Zm0 0h3v1h-2v1h-1v-2Zm-4-1v1h1v-2H7v1h2Z"/>
+  			<path d="M7 12h1v3h4v1H7v-4Zm9 2v2h-3v-1h2v-1h1Z"/>
+			</svg>
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="userQrLinkModal" tabindex="-1" aria-labelledby="userQrLinkModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 style="color: #000000;" class="modal-title" id="userQrLinkModalLabel">Scan QR with UB Messenger</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="assets/img/qr/purchase-messenger/uberbooty-messenger-purchase-link.png" width="100%" height="auto" alt=""/> </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">Add Tokens</button>
+        <button type="button" class="btn btn-outline-info">Purchase UB Messenger to Connect</button>
+      </div>
+    </div>
+  </div>
+</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+	</section>
+	<section>
+	 <div class="container px-4 py-5" id="icon-grid">
+    <h2 class="pb-2 border-bottom">The Club Membership Features&nbsp;</h2>
+
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5">
+      <div class="col d-flex align-items-start">
+        <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#bootstrap"></use></svg>
+        <div>
+          <h4 class="fw-bold mb-0">Seekers Network</h4>
+          <p>Paragraph of text beneath the heading to explain the heading.</p>
+        </div>
+      </div>
+      <div class="col d-flex align-items-start">
+        <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#cpu-fill"></use></svg>
+        <div>
+          <h4 class="fw-bold mb-0">Provider Profiles</h4>
+          <p>Paragraph of text beneath the heading to explain the heading.</p>
+        </div>
+      </div>
+      <div class="col d-flex align-items-start">
+        <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#calendar3"></use></svg>
+        <div>
+          <h4 class="fw-bold mb-0">Digital Wallet</h4>
+          <p>Paragraph of text beneath the heading to explain the heading.</p>
+        </div>
+      </div>
+      <div class="col d-flex align-items-start">
+        <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#home"></use></svg>
+        <div>
+          <h4 class="fw-bold mb-0">Real-Time Quotes</h4>
+          <p>Paragraph of text beneath the heading to explain the heading.</p>
+        </div>
+      </div>
+      <div class="col d-flex align-items-start">
+        <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#speedometer2"></use></svg>
+        <div>
+          <h4 class="fw-bold mb-0">Safety Broadcast</h4>
+          <p>Paragraph of text beneath the heading to explain the heading.</p>
+        </div>
+      </div>
+      <div class="col d-flex align-items-start">
+        <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#toggles2"></use></svg>
+        <div>
+          <h4 class="fw-bold mb-0">Smart Contracts</h4>
+          <p>Paragraph of text beneath the heading to explain the heading.</p>
+        </div>
+      </div>
+      <div class="col d-flex align-items-start">
+        <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#geo-fill"></use></svg>
+        <div>
+          <h4 class="fw-bold mb-0">NFT Arrangement</h4>
+          <p>Paragraph of text beneath the heading to explain the heading.</p>
+        </div>
+      </div>
+      <div class="col d-flex align-items-start">
+        <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#tools"></use></svg>
+        <div>
+          <h4 class="fw-bold mb-0">UB Messenger</h4>
+          <p>Paragraph of text beneath the heading to explain the heading.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+	</section>
+	<!--Section Demo News Feed -->
+
+  <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+    <p class="col-md-2 mb-0 text-muted">© 2022 <strong>AE-PPV, Inc.</strong></p>
+
+    <a href="/" class="col-md-3 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+      <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+    </a>
+
+    <ul class="nav col-md-7 justify-content-end">
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Browse Escorts</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Memberships</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Boober</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Register</a></li>
+		<li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Login</a></li>
+    </ul>
+  
+</footer>
+    <!--Being QR Scan-->
+<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasExampleLabel">QR</h5>
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div>
+      Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
+    </div>
+  </div>
+</div>
+	  <!-- End QR Scan-->
+	  <!--Begin Search-->
+<div class="offcanvas offcanvas-start" tabindex="-1" id="advancedSearch" aria-labelledby="advancedSearchLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="advancedSearchLabel">Search</h5>
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div>
+      Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
+    </div>
+
+  </div>
+</div>
+	  <!--End Advanced Search-->
+<script type="text/javascript" src="assets/js/bootstrap.bundle.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap.js"></script>
+
+  </body>
+<!-- InstanceEnd --></html>
