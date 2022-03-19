@@ -40,10 +40,10 @@
 
 }
 .uberbooty-intro-card {
-    padding-top: 3em;
-    padding-right: 3em;
-    padding-bottom: 3em;
-    padding-left: 3em;
+    padding-top: 1em;
+    padding-right: 1em;
+    padding-bottom: 1em;
+    padding-left: 1em;
     /* [disabled]background-color: #FFFFFF; */
     border-radius: 10px;
     background-image: -webkit-linear-gradient(270deg,rgba(0,0,0,0.38) 0%,rgba(0,0,0,0.35) 100%);
@@ -82,11 +82,12 @@
     /* [disabled]color: #FFFFFF; */
 }
 .feature-icon {
-    padding-top: 17px;
-    padding-right: 17px;
-    padding-bottom: 17px;
-    padding-left: 17px;
+    padding-top: 0px;
+    padding-right: 4px;
+    padding-bottom: 0px;
+    padding-left: 0px;
     max-width: 6em;
+    margin-top: 3px;
 }
 .type-badge {
     width: 61px;
@@ -98,4 +99,9 @@
     padding-left: 8px;
     text-align: center;
     color: #FFFFFF;
+}
+#icon-grid i {
+
+}
+.feature-icon {
 }

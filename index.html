@@ -15,28 +15,29 @@
 	<style>
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&display=swap');
 </style>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
 	<!--End Font Scripts-->
 <!-- InstanceBeginEditable name="head" -->
 <!-- InstanceEndEditable -->
 </head>
-<body>
+<body> 
 <header>
    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
    <div class="container">
-   <a class="navbar-brand" href="#">UberBooty</a>
+   <a class="navbar-brand" href="/index.html">{UberBooty.App}</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link" aria-current="page" href="browse-escorts.html">Browse Escorts</a>
+          <a class="nav-link" aria-current="page" href="#recently-active-home">Browse</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="memberships.html">Memberships</a>
         </li>
 		<li class="nav-item">
-          <a class="nav-link" href="#">Boober</a>
+          <a class="nav-link" href="#">Tokens</a>
         </li>
 		  <li class="nav-item">
           <a class="nav-link" href="memberships.html">Register</a>
@@ -48,7 +49,7 @@
 		
 		
 		<!--Search Button-->
-		<button class="btn btn-outline-light nav-btn-padding" type="button" data-bs-toggle="offcanvas" data-bs-target="#advancedSearch" aria-controls="advancedSearch">
+		<button class="btn btn-light nav-btn-padding" type="button" data-bs-toggle="offcanvas" data-bs-target="#advancedSearch" aria-controls="advancedSearch">
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
   			<path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
 		  </svg>
@@ -57,7 +58,7 @@
 			</span>
         </button>
 		<!--QR Scanner/Input Wallet Information-->
-        <button class="btn btn-outline-warning nav-btn-padding" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+        <button class="btn btn-warning nav-btn-padding" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-qr-code-scan" viewBox="0 0 16 16">
   			<path d="M0 .5A.5.5 0 0 1 .5 0h3a.5.5 0 0 1 0 1H1v2.5a.5.5 0 0 1-1 0v-3Zm12 0a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0V1h-2.5a.5.5 0 0 1-.5-.5ZM.5 12a.5.5 0 0 1 .5.5V15h2.5a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5v-3a.5.5 0 0 1 .5-.5Zm15 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1 0-1H15v-2.5a.5.5 0 0 1 .5-.5ZM4 4h1v1H4V4Z"/>
   			<path d="M7 2H2v5h5V2ZM3 3h3v3H3V3Zm2 8H4v1h1v-1Z"/>
@@ -70,7 +71,7 @@
 			</span>
         </button>
 		<!--Purchase Tokens-->
-		<button type="button" class="btn btn-outline-info nav-btn-padding">
+		<button type="button" class=" d-none btn btn-info nav-btn-padding">
 		<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-coin" viewBox="0 0 16 16">
   			<path d="M5.5 9.511c.076.954.83 1.697 2.182 1.785V12h.6v-.709c1.4-.098 2.218-.846 2.218-1.932 0-.987-.626-1.496-1.745-1.76l-.473-.112V5.57c.6.068.982.396 1.074.85h1.052c-.076-.919-.864-1.638-2.126-1.716V4h-.6v.719c-1.195.117-2.01.836-2.01 1.853 0 .9.606 1.472 1.613 1.707l.397.098v2.034c-.615-.093-1.022-.43-1.114-.9H5.5zm2.177-2.166c-.59-.137-.91-.416-.91-.836 0-.47.345-.822.915-.925v1.76h-.005zm.692 1.193c.717.166 1.048.435 1.048.91 0 .542-.412.914-1.135.982V8.518l.087.02z"/>
   			<path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
@@ -85,10 +86,10 @@
 		
     </div>
   </div>
-</nav>
+</nav> 
     </header>
 	  <!-- InstanceBeginEditable name="Page-Content" -->
-	<section id="welcome-to-the-club">
+		<section id="welcome-to-the-club">
 	 <div class="container col-xl-10 col-xxl-8 px-4 py-5">
     <div class="row align-items-center g-lg-5 py-5">
       <div class="col-lg-7 text-center text-lg-start">
@@ -102,7 +103,7 @@
 
 		  <div class="intro-button-group text-center">
 			<button class="btn btn-outline-info btn-lg col-5" type="button">Search</button>
-		  <button class="btn btn-outline-warning btn-lg col-5" type="button">Club Benefits</button>
+		  <button class="btn btn-outline-warning btn-lg col-5" type="button"> Benefits</button>
 		  </div>  
 		</div>
       </div>
@@ -121,9 +122,9 @@
               <input type="checkbox" value="remember-me"> Remember me
             </label>
           </div>
-          <button class="w-100 btn btn-lg btn-outline-primary" type="submit">Join The Club</button>
+          <button class="w-100 btn btn-lg btn-outline-primary" type="submit">Join {The Club}</button>
           <hr class="my-4">
-          <small class="text-muted">By clicking Join the club, you agree to the terms of use.</small>
+          <small class="text-muted">By clicking Join {The Club}, you agree to the terms of use.</small>
         </form>
       </div>
     </div>
@@ -134,27 +135,26 @@
     <h2 class="pb-2 border-bottom">Ultimate Connections Platform</h2>
     <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
       <div class="feature col">
-        <h2><strong>Join The Club</strong></h2>
+        <h2><strong>Join <code>{The Club}</code></strong></h2>
 <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
-        <a href="#" class="icon-link">
-          Join "The Club"
+        <a href="#" class="btn btn-warning">
+          Apply to Join {The Club}
           <svg class="bi" width="1em" height="1em"><use xlink:href="#chevron-right"></use></svg>
         </a>
       </div>
       <div class="feature col">
-        <h2><strong>Purchase Tokens</strong></h2>
+        <h2><strong>Secured <code>{Funds}</code></strong></h2>
 <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
-        <a href="#" class="icon-link">
-          Purchase UB Tokens
+        <a href="#" class="btn btn-info">
+          Secured {Funds} with NFT
 <svg class="bi" width="1em" height="1em"><use xlink:href="#chevron-right"></use></svg>
         </a>
       </div>
       <div class="feature col">
-        <h2>Connect Digitally</h2>
+        <h2>Uber <code>{Delivery}</code></h2>
         <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
-        <a href="#" class="icon-link">
-          Connect With UB Messenger
-          <svg class="bi" width="1em" height="1em"><use xlink:href="#chevron-right"></use></svg>
+        <a href="#" class="btn btn-danger text-dark">
+          Connect {UB Messenger}
         </a>
       </div>
     </div>
@@ -198,14 +198,14 @@
 		  </div>
 		  <div class="col-sm-2">
 			  <label for="Gender" class="form-label">Start Search!</label>
-		   <button type="button" class="btn btn-outline-info form-control">Search </button>
+		   <a href="#register-for-uberbooty" type="button" class="btn btn-outline-info form-control">Search </a>
 		  </div>
 	  </div>	
 	 </div>
 
 	<section id="recently-active-home">
     
-		<div class="container">
+		<div class="container-fluid">
 			<div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
       <div class="col">
         <div class="user-intro-card card card-cover  overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: -webkit-linear-gradient(270deg,rgba(0,0,0,0.68) 0%,rgba(116,28,28,0.61) 100%), url('unsplash-photo-3.jpg'); background-image: -moz-linear-gradient(270deg,rgba(0,0,0,0.68) 0%,rgba(116,28,28,0.61) 100%), url('assets/img/uber-booty-only-fans/0mbs6moxak381.jpg'); background-image: -o-linear-gradient(270deg,rgba(0,0,0,0.68) 0%,rgba(116,28,28,0.61) 100%), url('assets/img/uber-booty-only-fans/0mbs6moxak381.jpg'); background-image: linear-gradient(180deg,rgba(0,0,0,0.68) 0%,rgba(116,28,28,0.61) 100%), url('assets/img/uber-booty-only-fans/0mbs6moxak381.jpg'); background-position: center top;">
@@ -298,22 +298,7 @@
 </button>
 
 <!-- Modal -->
-<div class="modal fade" id="userQrLinkModal" tabindex="-1" aria-labelledby="userQrLinkModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 style="color: #000000;" class="modal-title" id="userQrLinkModalLabel">Scan QR with UB Messenger</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <img src="assets/img/qr/purchase-messenger/uberbooty-messenger-purchase-link.png" width="100%" height="auto" alt=""/> </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">Add Tokens</button>
-        <button type="button" class="btn btn-outline-info">Purchase UB Messenger to Connect</button>
-      </div>
-    </div>
-  </div>
-</div>
+
               </li>
             </ul>
           </div>
@@ -352,24 +337,6 @@
   			<path d="M7 12h1v3h4v1H7v-4Zm9 2v2h-3v-1h2v-1h1Z"/>
 			</svg>
 </button>
-
-<!-- Modal -->
-<div class="modal fade" id="userQrLinkModal" tabindex="-1" aria-labelledby="userQrLinkModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 style="color: #000000;" class="modal-title" id="userQrLinkModalLabel">Scan QR with UB Messenger</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <img src="assets/img/qr/purchase-messenger/uberbooty-messenger-purchase-link.png" width="100%" height="auto" alt=""/> </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">Add Tokens</button>
-        <button type="button" class="btn btn-outline-info">Purchase UB Messenger to Connect</button>
-      </div>
-    </div>
-  </div>
-</div>
               </li>
             </ul>
           </div>
@@ -406,28 +373,11 @@
   			 <path d="M2 2h2v2H2V2Z"/>
   			 <path d="M6 0v6H0V0h6ZM5 1H1v4h4V1ZM4 12H2v2h2v-2Z"/>
   			<path d="M6 10v6H0v-6h6Zm-5 1v4h4v-4H1Zm11-9h2v2h-2V2Z"/>
+
   			<path d="M10 0v6h6V0h-6Zm5 1v4h-4V1h4ZM8 1V0h1v2H8v2H7V1h1Zm0 5V4h1v2H8ZM6 8V7h1V6h1v2h1V7h5v1h-4v1H7V8H6Zm0 0v1H2V8H1v1H0V7h3v1h3Zm10 1h-1V7h1v2Zm-1 0h-1v2h2v-1h-1V9Zm-4 0h2v1h-1v1h-1V9Zm2 3v-1h-1v1h-1v1H9v1h3v-2h1Zm0 0h3v1h-2v1h-1v-2Zm-4-1v1h1v-2H7v1h2Z"/>
   			<path d="M7 12h1v3h4v1H7v-4Zm9 2v2h-3v-1h2v-1h1Z"/>
 			</svg>
 </button>
-
-<!-- Modal -->
-<div class="modal fade" id="userQrLinkModal" tabindex="-1" aria-labelledby="userQrLinkModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 style="color: #000000;" class="modal-title" id="userQrLinkModalLabel">Scan QR with UB Messenger</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <img src="assets/img/qr/purchase-messenger/uberbooty-messenger-purchase-link.png" width="100%" height="auto" alt=""/> </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">Add Tokens</button>
-        <button type="button" class="btn btn-outline-info">Purchase UB Messenger to Connect</button>
-      </div>
-    </div>
-  </div>
-</div>
               </li>
             </ul>
           </div>
@@ -466,24 +416,6 @@
   			<path d="M7 12h1v3h4v1H7v-4Zm9 2v2h-3v-1h2v-1h1Z"/>
 			</svg>
 </button>
-
-<!-- Modal -->
-<div class="modal fade" id="userQrLinkModal" tabindex="-1" aria-labelledby="userQrLinkModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 style="color: #000000;" class="modal-title" id="userQrLinkModalLabel">Scan QR with UB Messenger</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <img src="assets/img/qr/purchase-messenger/uberbooty-messenger-purchase-link.png" width="100%" height="auto" alt=""/> </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">Add Tokens</button>
-        <button type="button" class="btn btn-outline-info">Purchase UB Messenger to Connect</button>
-      </div>
-    </div>
-  </div>
-</div>
               </li>
             </ul>
           </div>
@@ -523,24 +455,6 @@
   			<path d="M7 12h1v3h4v1H7v-4Zm9 2v2h-3v-1h2v-1h1Z"/>
 			</svg>
 </button>
-
-<!-- Modal -->
-<div class="modal fade" id="userQrLinkModal" tabindex="-1" aria-labelledby="userQrLinkModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 style="color: #000000;" class="modal-title" id="userQrLinkModalLabel">Scan QR with UB Messenger</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <img src="assets/img/qr/purchase-messenger/uberbooty-messenger-purchase-link.png" width="100%" height="auto" alt=""/> </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">Add Tokens</button>
-        <button type="button" class="btn btn-outline-info">Purchase UB Messenger to Connect</button>
-      </div>
-    </div>
-  </div>
-</div>
               </li>
             </ul>
           </div>
@@ -549,62 +463,94 @@
     </div>
   </div>
 	</section>
-	<section>
-	 <div class="container px-4 py-5" id="icon-grid">
-    <h2 class="pb-2 border-bottom">The Club Membership Features&nbsp;</h2>
+	
+	<!--Intro Email - Username Signup-->
+	<section id="register-for-uberbooty" class="bg-dark">
+	 <div class="p-5 mb-4 bg-info rounded-3">
+      <div class="container-fluid py-5">
+        <h1 class="display-5 fw-bold">1 Token = Unlimted Viewing</h1>
+        <p class="col-md-8 fs-4">Using a series of social networks, our seekers embed their social posts into their club profiles, along with integrating our photo galleries, video content, and anything goes with our unrestricted listings.<br><br> Check out {The Club} by becoming a viewer for 1 token or apply below for how you can remix and restyle your social presence by applying for <br> The Club - Social Freedom Newtork.</p>
+        <button style="margin-bottom: 15px;" class="btn btn-warning btn-lg" type="button">Purchase Viewer Access</button>
+		  <button style="margin-bottom: 15px;" class="btn btn-outline-secondary btn-lg" type="button">Dashboard Sneak Peak</button>
+      </div>
+    </div>
+	<div class="container-fluid">
+	  <div class="row align-items-md-stretch">
+      <div class="col-md-6">
+        <div class="h-100 p-5 text-white bg-success rounded-3">
+          <h2>Provider Registration</h2>
+          <p>Swap the feed flow for your life by utilizing {The Club} and it's unrestricted bulletin board feed, marketplace utility with nft smart contracts (escrow), digital banking wallet, and find playmates to mix up the mood. Then, mix and match with additional undisclosed components and much more.</p>
+          <button class="btn btn-outline-light" type="button">Register as Provider</button>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="h-100 p-5 bg-danger border rounded-3">
+          <h2>Seeker Application</h2>
+          <p>Or, keep use {The Club} to work for you by applying to become a vendor for some added definition to the boundaries of your content. Be sure to look under the hood at the seeker dashboard to see how we've adjusted the alignment and safety of both in-person marketplace transactions and paid content.</p>
+          <button class="btn btn-outline-light" type="button">Apply To be a Seeker</button>
+        </div>
+      </div>
+    </div>	
+	</div>
+	</section>
+	<!--Section Demo News Feed -->
+	<section id="membership-registration" class="bg-dark text-light">
+	 <div class="container-fluid px-4 py-5" id="icon-grid">
+    <h2 class="pb-2 border-bottom"><code>{The Club}</code> Benefits</h2>
 
     <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5">
-      <div class="col d-flex align-items-start">
-        <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#bootstrap"></use></svg>
+      <div class="col d-flex align-items-start ">
+        <i class="text-warning feature-icon bi bi-share"></i>
         <div>
           <h4 class="fw-bold mb-0">Seekers Network</h4>
           <p>Paragraph of text beneath the heading to explain the heading.</p>
         </div>
       </div>
       <div class="col d-flex align-items-start">
-        <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#cpu-fill"></use></svg>
+        <i class="text-danger feature-icon bi bi-person-bounding-box"></i>
         <div>
-          <h4 class="fw-bold mb-0">Provider Profiles</h4>
+          <h4 class="fw-bold mb-0">Provier Profile</h4>
           <p>Paragraph of text beneath the heading to explain the heading.</p>
         </div>
       </div>
       <div class="col d-flex align-items-start">
-        <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#calendar3"></use></svg>
+        <i class="text-success feature-icon bi bi-valentine" style=""></i>
         <div>
           <h4 class="fw-bold mb-0">Digital Wallet</h4>
           <p>Paragraph of text beneath the heading to explain the heading.</p>
         </div>
       </div>
       <div class="col d-flex align-items-start">
-        <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#home"></use></svg>
+        <i class="text-danger feature-icon bi bi-heart-pulse"></i>
         <div>
-          <h4 class="fw-bold mb-0">Real-Time Quotes</h4>
+          <h4 class="fw-bold mb-0">Real-Time Quote</h4>
           <p>Paragraph of text beneath the heading to explain the heading.</p>
         </div>
       </div>
       <div class="col d-flex align-items-start">
-        <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#speedometer2"></use></svg>
+        <i class="text-primary feature-icon bi bi-broadcast-pin"></i>
         <div>
           <h4 class="fw-bold mb-0">Safety Broadcast</h4>
           <p>Paragraph of text beneath the heading to explain the heading.</p>
         </div>
       </div>
       <div class="col d-flex align-items-start">
-        <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#toggles2"></use></svg>
+        <i class="text-success feature-icon bi bi-motherboard"></i>
         <div>
-          <h4 class="fw-bold mb-0">Smart Contracts</h4>
+          <h4 class="fw-bold mb-0">Smart Contract</h4>
           <p>Paragraph of text beneath the heading to explain the heading.</p>
         </div>
       </div>
       <div class="col d-flex align-items-start">
-        <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#geo-fill"></use></svg>
+        <i class="text-warning feature-icon bi bi-credit-card-2-front"></i>
+
         <div>
-          <h4 class="fw-bold mb-0">NFT Arrangement</h4>
+          <h4 class="fw-bold mb-0">Secured Funds&nbsp;</h4>
           <p>Paragraph of text beneath the heading to explain the heading.</p>
         </div>
       </div>
       <div class="col d-flex align-items-start">
-        <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#tools"></use></svg>
+        <i class="text-info feature-icon bi bi-chat-left-text"></i>
         <div>
           <h4 class="fw-bold mb-0">UB Messenger</h4>
           <p>Paragraph of text beneath the heading to explain the heading.</p>
@@ -613,9 +559,14 @@
     </div>
   </div>
 	</section>
-	<!--Section Demo News Feed -->
-
-  <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+	
+	
+	
+	<!-- InstanceEndEditable -->
+	  
+	  
+	  
+<footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
     <p class="col-md-2 mb-0 text-muted">© 2022 <strong>AE-PPV, Inc.</strong></p>
 
     <a href="/" class="col-md-3 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
@@ -623,14 +574,13 @@
     </a>
 
     <ul class="nav col-md-7 justify-content-end">
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Browse Escorts</a></li>
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Memberships</a></li>
+      <li class="nav-item"><a href="/browse-escorts.html" class="nav-link px-2 text-muted">Browse Escorts</a></li>
+      <li class="nav-item"><a href="/memberships.html" class="nav-link px-2 text-muted">Memberships</a></li>
       <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Boober</a></li>
       <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Register</a></li>
 		<li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Login</a></li>
     </ul>
-  
-</footer>
+  </footer>
     <!--Being QR Scan-->
 <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
   <div class="offcanvas-header">
@@ -639,8 +589,9 @@
   </div>
   <div class="offcanvas-body">
     <div>
-      Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
+      QR Quote Request?
     </div>
+
   </div>
 </div>
 	  <!-- End QR Scan-->
@@ -652,9 +603,8 @@
   </div>
   <div class="offcanvas-body">
     <div>
-      Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
+    Advanced SideBar Search
     </div>
-
   </div>
 </div>
 	  <!--End Advanced Search-->
