@@ -33,17 +33,17 @@
         <li class="nav-item">
           <a class="nav-link" aria-current="page" href="#recently-active-home">Browse</a>
         </li>
+		  <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="#membership-apps">UberEZPay</a>
+        </li>
         <li class="nav-item">
-          <a class="nav-link" href="../memberships.html">Memberships</a>
+          <a class="nav-link" href="../memberships.html">Membership</a>
         </li>
 		<li class="nav-item">
           <a class="nav-link" href="#">Tokens</a>
         </li>
 		  <li class="nav-item">
-          <a class="nav-link" href="../memberships.html">Register</a>
-        </li>
-		  <li class="nav-item">
-          <a class="nav-link" href="#">Login</a>
+          <a class="nav-link" href="../memberships.html">Apply</a>
         </li>
       </ul>
 		

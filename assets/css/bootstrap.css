@@ -5652,6 +5652,11 @@ textarea.form-control-lg {
   .modal-fullscreen-sm-down .modal-footer {
     border-radius: 0;
   }
+.xs-pad-bottom {
+    margin-bottom: 25px;
+
+}
+
 }
 @media (max-width: 767.98px) {
   .modal-fullscreen-md-down {
@@ -5674,6 +5679,11 @@ textarea.form-control-lg {
   .modal-fullscreen-md-down .modal-footer {
     border-radius: 0;
   }
+.xs-pad-bottom {
+    margin-bottom: 25px;
+
+}
+
 }
 @media (max-width: 991.98px) {
   .modal-fullscreen-lg-down {
