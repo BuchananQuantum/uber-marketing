@@ -1,0 +1,503 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- TemplateBeginEditable name="doctitle" -->
+    <title>UberBooty.App</title>
+    <!-- TemplateEndEditable -->
+    <!-- Bootstrap CSS -->
+	<link href="assets/css/bootstrap.css" rel="stylesheet" type="text/css">
+	<!--IEA Styles -->
+	<link href="iea-styles.css" rel="stylesheet" type="text/css">
+	<!--Font Scripts-->
+	<style>
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&display=swap');
+</style>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+	<!--End Font Scripts-->
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
+</head>
+<body class="bg-dark text-light"> 
+<header>
+   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+   <div class="container">
+   <a class="navbar-brand" href="/index.html">{UberBooty.App}</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="#recently-active-home">Browse</a>
+        </li>
+		  <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="#membership-apps">UberEZPay</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../memberships.html">Membership</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="../connection-delivery.html">Connection Delivery</a>
+          </li>
+		<li class="nav-item">
+          <a class="nav-link" href="#">Tokens</a>
+        </li>
+		  <li class="nav-item">
+          <a class="nav-link" href="../memberships.html">Apply</a>
+        </li>
+      </ul>
+		
+		
+		<!--Search Button-->
+		<button class="btn btn-light nav-btn-padding" type="button" data-bs-toggle="offcanvas" data-bs-target="#advancedSearch" aria-controls="advancedSearch">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+  			<path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+		  </svg>
+			<span class="nav-balance nav-btn-text">
+			Search
+			</span>
+        </button>
+		<!--QR Scanner/Input Wallet Information-->
+        <button class="btn btn-warning nav-btn-padding" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-qr-code-scan" viewBox="0 0 16 16">
+  			<path d="M0 .5A.5.5 0 0 1 .5 0h3a.5.5 0 0 1 0 1H1v2.5a.5.5 0 0 1-1 0v-3Zm12 0a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0V1h-2.5a.5.5 0 0 1-.5-.5ZM.5 12a.5.5 0 0 1 .5.5V15h2.5a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5v-3a.5.5 0 0 1 .5-.5Zm15 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1 0-1H15v-2.5a.5.5 0 0 1 .5-.5ZM4 4h1v1H4V4Z"/>
+  			<path d="M7 2H2v5h5V2ZM3 3h3v3H3V3Zm2 8H4v1h1v-1Z"/>
+  			<path d="M7 9H2v5h5V9Zm-4 1h3v3H3v-3Zm8-6h1v1h-1V4Z"/>
+  			<path d="M9 2h5v5H9V2Zm1 1v3h3V3h-3ZM8 8v2h1v1H8v1h2v-2h1v2h1v-1h2v-1h-3V8H8Zm2 2H9V9h1v1Zm4 2h-1v1h-2v1h3v-2Zm-4 2v-1H8v1h2Z"/>
+  			<path d="M12 9h2V8h-2v1Z"/>
+</svg>
+			<span class="nav-balance nav-btn-text">
+			QR Scanner
+			</span>
+        </button>
+		<!--Purchase Tokens-->
+		<button type="button" class=" d-none btn btn-info nav-btn-padding">
+		<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-coin" viewBox="0 0 16 16">
+  			<path d="M5.5 9.511c.076.954.83 1.697 2.182 1.785V12h.6v-.709c1.4-.098 2.218-.846 2.218-1.932 0-.987-.626-1.496-1.745-1.76l-.473-.112V5.57c.6.068.982.396 1.074.85h1.052c-.076-.919-.864-1.638-2.126-1.716V4h-.6v.719c-1.195.117-2.01.836-2.01 1.853 0 .9.606 1.472 1.613 1.707l.397.098v2.034c-.615-.093-1.022-.43-1.114-.9H5.5zm2.177-2.166c-.59-.137-.91-.416-.91-.836 0-.47.345-.822.915-.925v1.76h-.005zm.692 1.193c.717.166 1.048.435 1.048.91 0 .542-.412.914-1.135.982V8.518l.087.02z"/>
+  			<path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+  			<path d="M8 13.5a5.5 5.5 0 1 1 0-11 5.5 5.5 0 0 1 0 11zm0 .5A6 6 0 1 0 8 2a6 6 0 0 0 0 12z"/>
+		</svg>
+			<span class="nav-balance nav-btn-text">
+			Tokens
+			</span>
+		</button>
+		
+      	
+		
+    </div>
+  </div>
+</nav> 
+    </header>
+	  <!-- TemplateBeginEditable name="Page-Content" -->
+      
+      <section class="container-fluid position-relative px-0 bg-dark text-light">
+        <div class="row g-0">
+          <div class="col-xl-7 col-lg-6 pe-lg-5">
+            <div class="d-flex h-100 pe-xl-4">
+              <video class="w-100" autoplay="" muted="" loop="" style="object-fit: cover;">
+                <source src="assets/img/connection-delivery/hero-video.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+          <div class="col-xl-5 col-lg-6 position-relative py-5">
+            <img src="assets/img/connection-delivery/hero-bg.png" class="position-absolute top-50 translate-middle-y ms-lg-n4" width="100%" alt="Background shapes">
+            <div class="position-relative zindex-5 text-center text-lg-start px-3 px-lg-0 py-xl-4 py-xxl-5 mt-lg-3 mx-auto mx-lg-0" style="max-width: 530px;">
+              <h2 class="h3 text-primary">UberBooty - Cuming May 22.2022</h2>
+              <h1 class="display-1 pb-lg-3 mb-3">Connection Delivery</h1>
+              <div class="d-flex justify-content-center justify-content-lg-start text-start mb-2">
+                <i class="bx bx-map fs-4 text-primary me-2"></i>
+                <div class="fs-xl">Where desires meet, Early Bird Access Available Now</div>
+              </div>
+              <div class="d-flex flex-column flex-sm-row justify-content-center justify-content-lg-start py-4 py-lg-5">
+                <a href="#" class="btn btn-outline-info shadow-primary btn-lg me-sm-3 me-xl-4 mb-3">Buy access pass</a>
+                <a href="#" class="btn btn-outline-primary btn-lg mb-3">
+                  <i class="bx bx-calendar-check fs-xl me-2 ms-n1"></i>
+                  Uber Delivery
+                </a>
+              </div>
+              <div class="d-flex align-items-center justify-content-center justify-content-lg-start text-start pb-2 pt-lg-2 pb-xl-0 pt-xl-5 mt-xxl-5">
+                <div class="d-flex me-3">
+                  <div class="d-flex align-items-center justify-content-center bg-light rounded-circle" style="width: 52px; height: 52px;">
+                    <img src="assets/img/connection-delivery/thumbnail-members/member-1-thumb.jpg" class="rounded-circle" width="48" alt="Avatar">
+                  </div>
+                  <div class="d-flex align-items-center justify-content-center bg-light rounded-circle ms-n3" style="width: 52px; height: 52px;">
+                    <img src="assets/img/connection-delivery/thumbnail-members/member-2-thumb.jpg" class="rounded-circle" width="48" alt="Avatar">
+                  </div>
+                  <div class="d-flex align-items-center justify-content-center bg-light rounded-circle ms-n3" style="width: 52px; height: 52px;">
+                    <img src="assets/img/connection-delivery/thumbnail-members/member-3-thumb.jpg" class="rounded-circle" width="48" alt="Avatar">
+                  </div>
+                </div>
+                <span class="fs-sm"><span class="text-primary fw-semibold">128,000+</span> associates are already with us</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="position-absolute d-none d-lg-block bottom-0 start-0 w-100 zindex-5 pb-xxl-5">
+          <div class="container pb-4 mb-3 mb-xxl-0">
+            <a href="#associates" class="d-table text-light opacity-80 text-decoration-none w-auto py-4" data-scroll="" data-scroll-offset="70">
+              <span class="d-flex align-items-center">
+                Scroll for more
+                <i class="bx bx-down-arrow-circle fs-3 ms-2"></i>
+              </span>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section id="associates" class="container py-5 my-2 my-md-4 my-lg-5 bg-dark text-light">
+        <div class="d-md-flex align-items-center justify-content-between text-center text-md-start pt-md-1 pt-lg-3">
+          <h2 class="h1 mb-4 mb-md-0 me-md-3">World-Class Member's</h2>
+          <a href="#/earlybird-access.html" class="btn btn-primary btn-lg">
+            Become a Member
+            <i class=" bx bx-right-arrow-alt fs-4 lh-1 ms-2 me-n1"></i>
+          </a>
+        </div>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 mt-2 mt-lg-4">
+
+          <!-- Item -->
+          <div class="col">
+            <div class="card card-hover border-0 bg-transparent">
+              <div class="position-relative">
+                <img src="assets/img/connection-delivery/wc-members/wc-member-1-thumb.jpg" width="100%" class="rounded-3" alt="Ralph Edwards">
+                <div class="card-img-overlay d-flex flex-column align-items-center justify-content-center rounded-3">
+                  <span class="position-absolute top-0 start-0 w-100 h-100  opacity-35 rounded-3"></span>
+                  <div class="position-relative d-flex zindex-2">
+                    <a href="#" class="btn btn-icon btn-secondary btn-facebook btn-sm bg-white me-2">
+                      <i class="bx bxl-facebook"></i>
+                    </a>
+                    <a href="#" class="btn btn-icon btn-secondary btn-linkedin btn-sm bg-white me-2">
+                      <i class="bx bxl-linkedin"></i>
+                    </a>
+                    <a href="#" class="btn btn-icon btn-secondary btn-twitter btn-sm bg-white">
+                      <i class="bx bxl-twitter"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body text-center p-3">
+                <h3 class="fs-lg fw-semibold pt-1 mb-2">Rabecca Edwards</h3>
+                <p class="fs-sm mb-0">Philadelphia, PA</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item -->
+          <div class="col">
+            <div class="card card-hover border-0 bg-transparent">
+              <div class="position-relative">
+                <img src="assets/img/connection-delivery/wc-members/wc-member-2-thumb.jpg" class="rounded-3" alt="Albert Flores">
+                <div class="card-img-overlay d-flex flex-column align-items-center justify-content-center rounded-3">
+                  <span class="position-absolute top-0 start-0 w-100 h-100  opacity-35 rounded-3"></span>
+                  <div class="position-relative d-flex zindex-2">
+                    <a href="#" class="btn btn-icon btn-secondary btn-facebook btn-sm bg-white me-2">
+                      <i class="bx bxl-facebook"></i>
+                    </a>
+                    <a href="#" class="btn btn-icon btn-secondary btn-linkedin btn-sm bg-white me-2">
+                      <i class="bx bxl-linkedin"></i>
+                    </a>
+                    <a href="#" class="btn btn-icon btn-secondary btn-twitter btn-sm bg-white">
+                      <i class="bx bxl-twitter"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body text-center p-3">
+                <h3 class="fs-lg fw-semibold pt-1 mb-2">Ally Flores</h3>
+                <p class="fs-sm mb-0">Chicago, IL</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item -->
+          <div class="col">
+            <div class="card card-hover border-0 bg-transparent">
+              <div class="position-relative">
+                <img src="assets/img/connection-delivery/wc-members/wc-member-3-thumb.jpg" class="rounded-3" alt="Jenny Wilson">
+                <div class="card-img-overlay d-flex flex-column align-items-center justify-content-center rounded-3">
+                  <span class="position-absolute top-0 start-0 w-100 h-100  opacity-35 rounded-3"></span>
+                  <div class="position-relative d-flex zindex-2">
+                    <a href="#" class="btn btn-icon btn-secondary btn-facebook btn-sm bg-white me-2">
+                      <i class="bx bxl-facebook"></i>
+                    </a>
+                    <a href="#" class="btn btn-icon btn-secondary btn-linkedin btn-sm bg-white me-2">
+                      <i class="bx bxl-linkedin"></i>
+                    </a>
+                    <a href="#" class="btn btn-icon btn-secondary btn-twitter btn-sm bg-white">
+                      <i class="bx bxl-twitter"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body text-center p-3">
+                <h3 class="fs-lg fw-semibold pt-1 mb-2">Jenny Wilson</h3>
+                <p class="fs-sm mb-0">Miami, FL</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item -->
+          <div class="col">
+            <div class="card card-hover border-0 bg-transparent">
+              <div class="position-relative">
+                <img src="assets/img/connection-delivery/wc-members/wc-member-4-thumb.jpg" class="rounded-3" alt="Marvin McKinney">
+                <div class="card-img-overlay d-flex flex-column align-items-center justify-content-center rounded-3">
+                  <span class="position-absolute top-0 start-0 w-100 h-100  opacity-35 rounded-3"></span>
+                  <div class="position-relative d-flex zindex-2">
+                    <a href="#" class="btn btn-icon btn-secondary btn-facebook btn-sm bg-white me-2">
+                      <i class="bx bxl-facebook"></i>
+                    </a>
+                    <a href="#" class="btn btn-icon btn-secondary btn-linkedin btn-sm bg-white me-2">
+                      <i class="bx bxl-linkedin"></i>
+                    </a>
+                    <a href="#" class="btn btn-icon btn-secondary btn-twitter btn-sm bg-white">
+                      <i class="bx bxl-twitter"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body text-center p-3">
+                <h3 class="fs-lg fw-semibold pt-1 mb-2">Marissa McKinney</h3>
+                <p class="fs-sm mb-0">Woodlands, TX</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item -->
+          <div class="col">
+            <div class="card card-hover border-0 bg-transparent">
+              <div class="position-relative">
+                <img src="assets/img/connection-delivery/wc-members/wc-member-4-thumb.jpg" class="rounded-3" alt="Esther Howard">
+                <div class="card-img-overlay d-flex flex-column align-items-center justify-content-center rounded-3">
+                  <span class="position-absolute top-0 start-0 w-100 h-100  opacity-35 rounded-3"></span>
+                  <div class="position-relative d-flex zindex-2">
+                    <a href="#" class="btn btn-icon btn-secondary btn-facebook btn-sm bg-white me-2">
+                      <i class="bx bxl-facebook"></i>
+                    </a>
+                    <a href="#" class="btn btn-icon btn-secondary btn-linkedin btn-sm bg-white me-2">
+                      <i class="bx bxl-linkedin"></i>
+                    </a>
+                    <a href="#" class="btn btn-icon btn-secondary btn-twitter btn-sm bg-white">
+                      <i class="bx bxl-twitter"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body text-center p-3">
+                <h3 class="fs-lg fw-semibold pt-1 mb-2">Esther Harden</h3>
+                <p class="fs-sm mb-0">Valley Forge, PA</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item -->
+          <div class="col">
+            <div class="card card-hover border-0 bg-transparent">
+              <div class="position-relative">
+                <img src="assets/img/connection-delivery/wc-members/wc-member-5-thumb.jpg" class="rounded-3" alt="Cameron Williamson">
+                <div class="card-img-overlay d-flex flex-column align-items-center justify-content-center rounded-3">
+                  <span class="position-absolute top-0 start-0 w-100 h-100  opacity-35 rounded-3"></span>
+                  <div class="position-relative d-flex zindex-2">
+                    <a href="#" class="btn btn-icon btn-secondary btn-facebook btn-sm bg-white me-2">
+                      <i class="bx bxl-facebook"></i>
+                    </a>
+                    <a href="#" class="btn btn-icon btn-secondary btn-linkedin btn-sm bg-white me-2">
+                      <i class="bx bxl-linkedin"></i>
+                    </a>
+                    <a href="#" class="btn btn-icon btn-secondary btn-twitter btn-sm bg-white">
+                      <i class="bx bxl-twitter"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body text-center p-3">
+                <h3 class="fs-lg fw-semibold pt-1 mb-2">Cameron Willis</h3>
+                <p class="fs-sm mb-0">Outer Banks, NC</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item -->
+          <div class="col">
+            <div class="card card-hover border-0 bg-transparent">
+              <div class="position-relative">
+                <img src="assets/img/connection-delivery/wc-members/wc-member-6-thumb.jpg" class="rounded-3" alt="Jerome Bell">
+                <div class="card-img-overlay d-flex flex-column align-items-center justify-content-center rounded-3">
+                  <span class="position-absolute top-0 start-0 w-100 h-100  opacity-35 rounded-3"></span>
+                  <div class="position-relative d-flex zindex-2">
+                    <a href="#" class="btn btn-icon btn-secondary btn-facebook btn-sm bg-white me-2">
+                      <i class="bx bxl-facebook"></i>
+                    </a>
+                    <a href="#" class="btn btn-icon btn-secondary btn-linkedin btn-sm bg-white me-2">
+                      <i class="bx bxl-linkedin"></i>
+                    </a>
+                    <a href="#" class="btn btn-icon btn-secondary btn-twitter btn-sm bg-white">
+                      <i class="bx bxl-twitter"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body text-center p-3">
+                <h3 class="fs-lg fw-semibold pt-1 mb-2">Andrea Maxwell</h3>
+                <p class="fs-sm mb-0">Denver, CO</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item -->
+          <div class="col">
+            <div class="card card-hover border-0 bg-transparent">
+              <div class="position-relative">
+                <img src="assets/img/connection-delivery/wc-members/wc-member-7-thumb.jpg" class="rounded-3" alt="Darrell Steward">
+                <div class="card-img-overlay d-flex flex-column align-items-center justify-content-center rounded-3">
+                  <span class="position-absolute top-0 start-0 w-100 h-100  opacity-35 rounded-3"></span>
+                  <div class="position-relative d-flex zindex-2">
+                    <a href="#" class="btn btn-icon btn-secondary btn-facebook btn-sm bg-white me-2">
+                      <i class="bx bxl-facebook"></i>
+                    </a>
+                    <a href="#" class="btn btn-icon btn-secondary btn-linkedin btn-sm bg-white me-2">
+                      <i class="bx bxl-linkedin"></i>
+                    </a>
+                    <a href="#" class="btn btn-icon btn-secondary btn-twitter btn-sm bg-white">
+                      <i class="bx bxl-twitter"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body text-center p-3">
+                <h3 class="fs-lg fw-semibold pt-1 mb-2">Darien Bell</h3>
+                <p class="fs-sm mb-0">Fort Wayne, IN</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="container pb-5 mb-2 mb-md-4 mb-lg-5 mt-n3 mt-lg-0">
+        <div class="row pt-xl-2 pb-md-3">
+          <div class="col-lg-5 mb-4 mb-lg-0">
+            <h2 class="h1 text-center text-sm-start mb-4">The Biggest Digital Connection Platform</h2>
+            <p class="pb-2 pb-lg-4 pb-xl-5 mb-3">Et, morbi at sagittis vehicula rutrum. Lacus tortor, quam arcu mi et, at lectus leo nunc. Mattis cras auctor vel pharetra tempor. Rhoncus pellentesque habitant ac tempor. At aliquam euismod est in praesent ornare etiam id. Faucibus libero sit vehicula sed condimentum. Vitae in nam porttitor rutrum sed aliquam donec sed. Sapien facilisi lectus.</p>
+            <h3 class="text-center text-sm-start mb-4">Ticket Prices</h3>
+
+            <!-- Pricing -->
+            <ul class="list-group">
+              <li class="list-group-item d-flex flex-column flex-sm-row align-items-center justify-content-between p-4">
+                <div class="d-flex align-items-center">
+                  <svg class="flex-shrink-0 me-2" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M23.794 1.71278C23.5195 1.43819 23.0743 1.43819 22.7997 1.71278L21.4284 3.08406C20.6078 2.1197 19.3859 1.50686 18.0235 1.50686C16.8653 1.50686 15.7764 1.95789 14.9577 2.77675L0.205961 17.5284C0.00486702 17.7295 -0.0552736 18.0319 0.0535233 18.2947C0.162367 18.5574 0.418726 18.7287 0.703117 18.7287H9.44934L11.8087 21.0881H11.2469C10.8585 21.0881 10.5437 21.4029 10.5437 21.7912C10.5437 22.1795 10.8585 22.4943 11.2469 22.4943H15.7656C16.1539 22.4943 16.4687 22.1795 16.4687 21.7912C16.4687 21.4029 16.1539 21.0881 15.7656 21.0881H13.7975L11.4381 18.7287H14.2594C18.7998 18.7287 22.4937 15.0348 22.4937 10.4943V5.97709C22.4937 5.39355 22.3812 4.83578 22.1769 4.32428L23.794 2.70714C24.0687 2.43255 24.0687 1.98737 23.794 1.71278ZM2.4006 17.3224L13.5562 6.1668V8.98806C13.5562 13.5836 9.81745 17.3224 5.22187 17.3224H2.4006ZM21.0875 10.4943C21.0875 14.2594 18.0244 17.3225 14.2594 17.3225H10.2592C13.0761 15.6134 14.9625 12.5168 14.9625 8.98811V6.15995C14.9625 5.25752 15.3139 4.40913 15.952 3.77116C16.5052 3.21784 17.2409 2.91316 18.0235 2.91316C19.713 2.91316 21.0875 4.28767 21.0875 5.97719L21.0875 10.4943Z" fill="currentColor"></path><path d="M18.7781 5.97526C19.1664 5.97526 19.4812 5.66046 19.4812 5.27213C19.4812 4.88381 19.1664 4.56901 18.7781 4.56901C18.3898 4.56901 18.075 4.88381 18.075 5.27213C18.075 5.66046 18.3898 5.97526 18.7781 5.97526Z" fill="currentColor"></path>
+                  </svg>
+                  <h4 class="fs-base fw-semibold text-nowrap ps-1 mb-0">Early birds</h4>
+                </div>
+                <h5 class="text-primary my-2 my-sm-0">$100</h5>
+                <div class="fs-sm">until Sep 1, 2022</div>
+              </li>
+              <li class="list-group-item d-flex flex-column flex-sm-row align-items-center justify-content-between p-4">
+                <div class="d-flex align-items-center">
+                  <svg class="flex-shrink-0 me-2" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18.0225 2.91133C17.2397 2.91133 16.5038 3.21602 15.9507 3.76914C15.3132 4.40664 14.9616 5.25508 14.9616 6.15977V8.98633C14.9616 12.516 13.0772 15.6098 10.26 17.3207H14.2585C18.0225 17.3207 21.0882 14.2598 21.0882 10.491V5.97227C21.0882 4.28945 19.71 2.91133 18.0225 2.91133ZM18.7772 5.97695C18.3882 5.97695 18.0741 5.66289 18.0741 5.27383C18.0741 4.88477 18.3882 4.5707 18.7772 4.5707C19.1663 4.5707 19.4804 4.88477 19.4804 5.27383C19.4804 5.66289 19.1663 5.97695 18.7772 5.97695ZM23.7929 1.71133C23.5163 1.43477 23.071 1.43477 22.7991 1.71133L21.4257 3.08477C20.6054 2.11914 19.3819 1.50977 18.0225 1.50977C16.8647 1.50977 15.7772 1.95977 14.9569 2.78008L0.20535 17.527C0.00378752 17.7285 -0.05715 18.0285 0.0506625 18.291C0.158475 18.5535 0.416288 18.727 0.702225 18.727H5.22097H9.4491L11.8069 21.0848H11.2444C10.8553 21.0848 10.5413 21.3988 10.5413 21.7879C10.5413 22.177 10.8553 22.491 11.2444 22.491H15.7632C16.1522 22.491 16.4663 22.177 16.4663 21.7879C16.4663 21.3988 16.1522 21.0848 15.7632 21.0848H13.7944L11.4366 18.727H14.2585C18.8007 18.727 22.4944 15.0332 22.4944 10.491V5.97227C22.4944 5.39102 22.3819 4.8332 22.1757 4.31758L23.7929 2.70039C24.0694 2.4332 24.0694 1.98789 23.7929 1.71133ZM2.3991 17.3207L13.5554 6.16445V8.98633C13.5554 13.5801 9.81472 17.3207 5.22097 17.3207H2.3991ZM21.0882 10.4957C21.0882 14.2598 18.0272 17.3254 14.2585 17.3254H10.26C13.0772 15.6145 14.9616 12.516 14.9616 8.98633V6.15977C14.9616 5.25508 15.3132 4.40664 15.9507 3.76914C16.5038 3.21602 17.2397 2.91133 18.0225 2.91133C19.71 2.91133 21.0882 4.28477 21.0882 5.97695V10.4957Z" fill="currentColor"></path>
+                  </svg>
+                  <h4 class="fs-base fw-semibold text-nowrap ps-1 mb-0">Late birds</h4>
+                </div>
+                <h5 class="badge bg-primary fs-5 fw-bold rounded px-3 py-0 my-3 my-sm-0">$499</h5>
+                <div class="fs-sm">after Sep 1, 2022</div>
+              </li>
+            </ul>
+          </div>
+          <div class="col-xl-6 col-lg-7 offset-xl-1 position-relative">
+
+            <!-- Ticket card -->
+            <div class="position-relative">
+              <div class="position-relative overflow-hidden bg-gradient-primary rounded-3 zindex-5 py-5 px-4 p-sm-5">
+                <span class="position-absolute top-50 start-0 translate-middle bg-light rounded-circle p-4"></span>
+                <span class="position-absolute top-0 start-0 w-100 h-100 bg-repeat-0 bg-position-center-end bg-size-cover" style="background-image: url(assets/img/landing/conference/price-card-pattern.png);"></span>
+                <div class="px-md-4 position-relative zindex-5">
+                  <div class="d-sm-flex align-items-start justify-content-between">
+                    <div class="text-center text-sm-start me-sm-4">
+                      <div class="lead fw-semibold text-light text-uppercase mb-2">Available May 22nd</div>
+                      <h3 class="h1 text-light">Early Bird Access</h3>
+                    </div>
+                    <div class="d-table bg-white rounded-3 p-4 flex-shrink-0 mx-auto mx-sm-0">
+                      <img src="assets/img/connection-delivery/qr.png" width="102" alt="QR Code">
+                    </div>
+                  </div>
+                  <div class="d-flex flex-column flex-sm-row align-items-center pt-4 mt-2" style="margin-bottom: 25px;">
+                    <a href="#" class="btn btn-light btn-lg mb-3 mb-sm-0 me-sm-3">Buy access pass</a>
+                    <div class="d-flex align-items-center">
+                      <span class="fs-lg text-light me-2">for only</span>
+                      <span class="h4 text-light mb-0">$100</span>
+                    </div>
+                  </div>
+                </div>
+                <span class="position-absolute top-50 end-0 translate-middle-y bg-light rounded-circle p-4 me-n4"></span>
+              </div>
+              <span class="position-absolute bg-gradient-primary opacity-60 bottom-0 mb-n2 d-dark-mode-none" style="left: 1.5rem; width: calc(100% - 3rem); height: 5rem; filter: blur(.625rem);"></span>
+            </div>
+
+            <!-- Arrow -->
+            <div class="position-absolute bottom-0 text-primary d-none d-lg-block ms-xl-n5 mb-lg-5 mb-xl-4 pb-3">
+              <div class="ms-xl-n4">
+                <svg width="95" height="100" viewBox="0 0 95 100" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M78.8361 25.0939C91.1514 40.6379 81.8802 63.3086 61.7212 64.3539C60.7119 64.447 59.5832 64.3477 58.6105 64.2848C58.7669 50.9978 52.4534 36.5276 41.6324 32.847C31.8669 29.5776 26.5235 39.0204 30.5663 47.0383C35.4083 56.5589 43.9198 64.4699 54.2628 67.3808C53.4517 75.7446 49.4008 83.1867 40.4191 85.693C25.2817 89.8859 9.48935 75.832 7.25928 61.4938C7.12064 59.981 4.79 60.0942 4.92864 61.607C5.83171 80.8987 28.9103 96.1621 46.7792 87.3441C53.6867 83.8595 57.3887 76.5003 58.3558 68.173C69.2212 69.5612 79.5859 63.2659 85.1681 54.2081C91.5844 43.7002 88.5763 31.9764 81.257 23.1926C80.1091 21.7727 77.8441 23.7109 78.8361 25.0939ZM39.1221 52.6568C36.2753 49.3596 33.1435 45.1733 32.7276 40.635C32.275 36.2527 38.2211 36.1619 40.7539 36.5897C43.9108 37.163 46.2067 40.0025 47.9151 42.5401C51.7632 47.8805 54.3289 55.8821 54.5172 63.4926C48.5423 61.6026 43.3094 57.2542 39.1221 52.6568Z" fill="currentColor"></path><path d="M75.1096 15.0312C74.0848 19.3973 73.3354 23.9923 73.4392 28.4577C73.5047 30.2821 76.0279 30.0497 76.1186 28.2613C76.2997 24.6849 77.2976 21.1349 78.2588 17.7408C80.2501 18.3708 82.3978 19.0372 84.3528 19.8231C85.8397 20.4997 87.9238 22.1382 89.7035 21.5672C90.5937 21.2818 90.7767 20.5022 90.6474 19.6495C90.3065 17.596 87.0302 16.8302 85.3872 16.1172C82.6885 14.993 80.073 14.2174 77.2645 13.561C76.3289 13.3423 75.3292 14.0956 75.1096 15.0312Z" fill="currentColor"></path></svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <section class="container py-5">
+        <div class="row mt-lg-3 pt-1 pt-md-4 pt-lg-5">
+          <div class="col-xl-3 col-md-4 text-center text-md-start">
+            <h3 class="h4">Uber</h3>
+            <h2 class="h1 mb-4">Secure Connection Delivery</h2>
+            <div class="d-none d-md-block text-primary">
+              <svg xmlns="http://www.w3.org/2000/svg" width="118" height="118" fill="none"><g clip-path="url(#A)"><path d="M116.912 76.527c-4.963-3.081-9.413-6.675-13.52-10.782-1.37-1.369-3.766-.343-3.766 1.54 0 1.54-.171 3.081-.171 4.621-14.89 2.739-29.78 3.936-45.013 4.108-12.836.342-30.123 1.712-41.761-4.45-8.9-4.792-10.269-15.917-6.504-24.475 1.54-3.594 4.279-6.504 7.702-8.557 3.936-2.396 7.873-1.027 11.981-2.054.513-.171.685-.856.342-1.369-6.333-6.675-17.457 1.027-21.565 6.504-5.819 7.702-6.161 18.998-1.027 27.042 7.531 11.981 25.501 11.125 37.653 11.467 19.169.685 39.365.171 58.192-4.108 0 1.712.171 3.252.685 4.963 0 .342.171.513.342.685-1.369 1.198-.171 4.279 2.225 3.765 4.963-1.027 9.927-2.568 14.548-4.792 1.198-1.026.856-3.251-.343-4.107zm-13.178-4.45c2.396 2.054 4.792 4.108 7.531 5.99-2.396 1.027-4.964 1.712-7.531 2.396v-.685c-.514-2.567-.342-5.135 0-7.702z" fill="currentColor"></path></g><defs><clipPath id="A"><path fill="#fff" d="M0 0h118v118H0z"></path></clipPath></defs></svg>
+            </div>
+          </div>
+          <div class="col-xl-9 col-md-8">
+            <img src="assets/img/connection-delivery/connection-delivery-hero.jpg" class="rounded-3" width="100%" alt="Venue">
+          </div>
+        </div>
+
+      </section>
+      
+      
+      
+      
+      <!-- TemplateEndEditable -->
+	  
+	  
+    <!--Being QR Scan-->
+<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasExampleLabel">QR</h5>
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div>
+      QR Quote Request?
+    </div>
+
+  </div>
+</div>
+	  <!-- End QR Scan-->
+	  <!--Begin Search-->
+<div class="offcanvas offcanvas-start" tabindex="-1" id="advancedSearch" aria-labelledby="advancedSearchLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="advancedSearchLabel">Search</h5>
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div>
+    Advanced SideBar Search
+    </div>
+  </div>
+</div>
+	  <!--End Advanced Search-->
+<script type="text/javascript" src="/assets/js/bootstrap.bundle.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap.js"></script>
+    <script type="text/javascript" src="assets/js/theme.js"></script>
+
+  </body>
+</html>
