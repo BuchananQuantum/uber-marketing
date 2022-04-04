@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[112],{120:function(n,o){window.dispatchEvent(new CustomEvent("syncSearchForms",{detail:{querystring:location.search}}))}},[[120,104]]]);
+//# sourceMappingURL=storiesList-4ac72ef96fc224b1aa7d.chunk.js.map
