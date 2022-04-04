@@ -1,0 +1,466 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- TemplateBeginEditable name="doctitle" -->
+    <title>UberBooty.App</title>
+    <!-- TemplateEndEditable -->
+    <!-- Bootstrap CSS -->
+	<link href="assets/css/bootstrap.css" rel="stylesheet" type="text/css">
+	<!--IEA Styles -->
+	<link href="iea-styles.css" rel="stylesheet" type="text/css">
+	<!--Font Scripts-->
+	<style>
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&display=swap');
+</style>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+
+    <link href="assets/css/swipper-bundle.css" rel="stylesheet" type="text/css">
+
+	<!--End Font Scripts-->
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
+</head>
+<body class="bg-dark text-light"> 
+<header>
+   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+   <div class="container">
+   <a class="navbar-brand" href="index.html">{UberBooty.App}</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="#recently-active-home">Browse</a>
+        </li>
+		  <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="uberezpay.html">UberEZPay</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../memberships.html">Membership</a>
+        </li>
+		<li class="nav-item">
+          <a class="nav-link" href="#">Tokens</a>
+        </li>
+		  <li class="nav-item">
+          <a class="nav-link" href="../memberships.html">Apply</a>
+        </li>
+      </ul>
+		
+		
+		<!--Search Button-->
+		<button class="btn btn-light nav-btn-padding" type="button" data-bs-toggle="offcanvas" data-bs-target="#advancedSearch" aria-controls="advancedSearch">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+  			<path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+		  </svg>
+			<span class="nav-balance nav-btn-text">
+			Search
+			</span>
+        </button>
+		<!--QR Scanner/Input Wallet Information-->
+        <button class="btn btn-warning nav-btn-padding" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-qr-code-scan" viewBox="0 0 16 16">
+  			<path d="M0 .5A.5.5 0 0 1 .5 0h3a.5.5 0 0 1 0 1H1v2.5a.5.5 0 0 1-1 0v-3Zm12 0a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0V1h-2.5a.5.5 0 0 1-.5-.5ZM.5 12a.5.5 0 0 1 .5.5V15h2.5a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5v-3a.5.5 0 0 1 .5-.5Zm15 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1 0-1H15v-2.5a.5.5 0 0 1 .5-.5ZM4 4h1v1H4V4Z"/>
+  			<path d="M7 2H2v5h5V2ZM3 3h3v3H3V3Zm2 8H4v1h1v-1Z"/>
+  			<path d="M7 9H2v5h5V9Zm-4 1h3v3H3v-3Zm8-6h1v1h-1V4Z"/>
+  			<path d="M9 2h5v5H9V2Zm1 1v3h3V3h-3ZM8 8v2h1v1H8v1h2v-2h1v2h1v-1h2v-1h-3V8H8Zm2 2H9V9h1v1Zm4 2h-1v1h-2v1h3v-2Zm-4 2v-1H8v1h2Z"/>
+  			<path d="M12 9h2V8h-2v1Z"/>
+</svg>
+			<span class="nav-balance nav-btn-text">
+			QR Scanner
+			</span>
+        </button>
+		<!--Purchase Tokens-->
+		<button type="button" class=" d-none btn btn-info nav-btn-padding">
+		<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-coin" viewBox="0 0 16 16">
+  			<path d="M5.5 9.511c.076.954.83 1.697 2.182 1.785V12h.6v-.709c1.4-.098 2.218-.846 2.218-1.932 0-.987-.626-1.496-1.745-1.76l-.473-.112V5.57c.6.068.982.396 1.074.85h1.052c-.076-.919-.864-1.638-2.126-1.716V4h-.6v.719c-1.195.117-2.01.836-2.01 1.853 0 .9.606 1.472 1.613 1.707l.397.098v2.034c-.615-.093-1.022-.43-1.114-.9H5.5zm2.177-2.166c-.59-.137-.91-.416-.91-.836 0-.47.345-.822.915-.925v1.76h-.005zm.692 1.193c.717.166 1.048.435 1.048.91 0 .542-.412.914-1.135.982V8.518l.087.02z"/>
+  			<path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+  			<path d="M8 13.5a5.5 5.5 0 1 1 0-11 5.5 5.5 0 0 1 0 11zm0 .5A6 6 0 1 0 8 2a6 6 0 0 0 0 12z"/>
+		</svg>
+			<span class="nav-balance nav-btn-text">
+			Tokens
+			</span>
+		</button>
+		
+      	
+		
+    </div>
+  </div>
+</nav> 
+    </header>
+	  <!-- TemplateBeginEditable name="Page-Content" -->
+      <section class="overflow-hidden pt-5" style="background: radial-gradient(116.18% 118% at 50% 100%, rgba(99, 102, 241, 0.1) 0%, rgba(218, 70, 239, 0.05) 41.83%, rgba(241, 244, 253, 0.07) 82.52%);">
+        <div class="container pt-4 pt-xl-5">
+          <div class="row pt-md-2 pt-lg-5">
+            <div class="col-md-5 d-flex flex-column mt-md-4 pt-5 pb-3 pb-sm-4 py-md-5">
+              <h1 class="display-4 text-center text-md-start mb-4">Manage Connections &amp; Payments in One App</h1>
+              <p class="fs-lg text-center text-md-start pb-2 pb-md-3 mb-4 mb-lg-5">We offer you a new generation of the safety, security and banking.<br>Connection, spend &amp; settle transactions all with UberEZPay!</p>
+              <div class="d-flex flex-column flex-sm-row justify-content-center justify-content-md-start">
+                <a href="#" class="btn btn-dark btn-lg px-3 py-2 me-sm-3 me-lg-4 mb-3">
+                  <img src="assets/img/uberezpay/appstore-dark.svg" class="dark-mode-img" width="124" alt="App Store">
+                </a>
+                <a href="#" class="btn btn-dark btn-lg px-3 py-2 mb-3">
+                  <img src="assets/img/uberezpay/googleplay-dark.svg" class="dark-mode-img" width="139" alt="Google Play">
+                </a>
+              </div>
+              <div class="position-relative d-inline-flex align-items-center justify-content-center justify-content-md-start mt-auto pt-3 pt-md-4 pb-xl-2">
+                <a href="#features" class="btn btn-icon btn-light bg-white stretched-link rounded-circle me-3" data-scroll="" data-scroll-offset="120">
+                  <i class="bx bx-chevron-down"></i>
+                </a>
+                <span class="fs-sm">Discover more</span>
+              </div>     
+            </div>
+            <div class="col-md-7 align-self-end">
+              <div class="position-relative overflow-hidden mt-4 pb-3 pt-4 mx-auto me-md-0" style="max-width: 632px;">
+                <div class="ratio ratio-1x1"></div>
+                <img src="assets/img/uberezpay/hero-phone-1.png" class="rellax position-absolute top-0 start-0 zindex-2" data-rellax-speed="1.6" data-disable-parallax-down="md" alt="Phone" style="transform: translate3d(0px, 0px, 0px);">
+                <img src="assets/img/uberezpay/hero-phone-2.png" class="rellax position-absolute top-0 start-0" data-rellax-speed="2.8" data-disable-parallax-down="md" alt="Phone" style="transform: translate3d(0px, 0px, 0px);">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="features" style="margin-top: 100px;" class="container pt-lg-2 pt-xl-3 pb-3 pb-xl-5  mb-2 mb-md-4 mb-lg-5">
+        <div class="row pb-xl-3">
+
+          <!-- Parallax gfx -->
+          <div class="col-lg-5 d-none d-lg-block">
+            <div class="position-relative" style="max-width: 348px;">
+              <img src="assets/img/uberezpay/phone.png" alt="Phone">
+              <div class="rellax position-absolute top-0" data-rellax-vertical-scroll-axis="x" data-rellax-horizontal-speed="0.75" data-disable-parallax-down="lg" style="max-width: 348px; right: -2.75rem; transform: translate3d(-28px, 0px, 0px);">
+                <img src="assets/img/uberezpay/card.png" alt="Card">
+              </div>
+            </div>
+          </div>
+
+          <!-- Feature list -->
+          <div class="col-lg-7">
+            <h2 class="h1 text-center text-md-start mb-4">UberEZPay Features</h2>
+            <p class="fs-lg text-muted text-center text-md-start mb-4 mb-xl-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin volutpat mollis egestas. Nam luctus facilisis ultrices. Pellentesque volutpat ligula est. Mattis fermentum, at nec lacus.</p>
+            <div class="row row-cols-1 row-cols-sm-2 pt-2 pt-sm-3 pt-xl-2">
+
+              <!-- Item -->
+              <div class="col pb-2 pb-xl-0 mb-4 mb-xl-5">
+                <div class="d-flex align-items-start pe-xl-3">
+                  <div class="d-table  rounded-3 flex-shrink-0 p-3 mb-3">
+                    <img src="assets/img/uberezpay/payments.svg" alt="Easy Payments">
+                  </div>
+                  <div class="ps-4 ps-sm-3 ps-md-4">
+                    <h3 class="h5 pb-1 mb-2">Easy Payments</h3>
+                    <p class="mb-0">Id mollis consectetur congue egestas egestas suspendisse blandit justo.</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Item -->
+              <div class="col pb-2 pb-xl-0 mb-4 mb-xl-5">
+                <div class="d-flex align-items-start ps-xl-3">
+                  <div class="d-table  rounded-3 flex-shrink-0 p-3 mb-3">
+                    <img src="assets/img/uberezpay/security.svg" alt="Data Security">
+                  </div>
+                  <div class="ps-4 ps-sm-3 ps-md-4">
+                    <h3 class="h5 pb-1 mb-2">Data Security</h3>
+                    <p class="mb-0">Augue pulvinar justo, fermentum fames aliquam accumsan vestibulum non.</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Item -->
+              <div class="col pb-2 pb-xl-0 mb-4 mb-xl-5">
+                <div class="d-flex align-items-start pe-xl-3">
+                  <div class="d-table  rounded-3 flex-shrink-0 p-3 mb-3">
+                    <img src="assets/img/uberezpay/statistics.svg" alt="Data Security">
+                  </div>
+                  <div class="ps-4 ps-sm-3 ps-md-4">
+                    <h3 class="h5 pb-1 mb-2">Statistics</h3>
+                    <p class="mb-0">Mattis urna ultricies non amet, purus in auctor non. Odio vulputate ac nibh.</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Item -->
+              <div class="col pb-2 pb-xl-0 mb-4 mb-xl-5">
+                <div class="d-flex align-items-start ps-xl-3">
+                  <div class="d-table  rounded-3 flex-shrink-0 p-3 mb-3">
+                    <img src="assets/img/uberezpay/security.svg" alt="Support 24/7">
+                  </div>
+                  <div class="ps-4 ps-sm-3 ps-md-4">
+                    <h3 class="h5 pb-1 mb-2">Support 24/7</h3>
+                    <p class="mb-0">A elementum, imperdiet enim, pretium etiam facilisi in aenean quam mauris.</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Item -->
+              <div class="col pb-2 pb-xl-0 mb-4 mb-xl-5">
+                <div class="d-flex align-items-start pe-xl-3">
+                  <div class="d-table  rounded-3 flex-shrink-0 p-3 mb-3">
+                    <img src="assets/img/uberezpay/cashback.svg" alt="Regular Cashback">
+                  </div>
+                  <div class="ps-4 ps-sm-3 ps-md-4">
+                    <h3 class="h5 pb-1 mb-2">ATM Withdraws</h3>
+                    <p class="mb-0">Sit facilisis dolor arcu, fermentum vestibulum arcu elementum imperdiet eleifend.</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Item -->
+              <div class="col pb-2 pb-xl-0 mb-4 mb-xl-5">
+                <div class="d-flex align-items-start ps-xl-3">
+                  <div class="d-table  rounded-3 flex-shrink-0 p-3 mb-3">
+                    <img src="assets/img/uberezpay/happy.svg" alt="Top Standards">
+                  </div>
+                  <div class="ps-4 ps-sm-3 ps-md-4">
+                    <h3 class="h5 pb-1 mb-2">Top Standards</h3>
+                    <p class="mb-0">Faucibus cursus maecenas lorem cursus nibh. Sociis sit risus id. Sit facilisis dolor arcu.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="position-relative bg-dark text-light py-5">
+        <div class="container mt-3 pt-md-2 pt-lg-4 pb-2 pb-md-4 pb-lg-5">
+          <h2 class="h1 text-center text-light pb-2 pb-md-0 mb-4 mb-md-5">How Does It Work?</h2>
+          <div class="position-relative mx-5">
+
+            <!-- Slider prev/next buttons -->
+            <button type="button" id="prev-screen" class="btn btn-prev btn-icon position-absolute top-50 start-0 ms-n5 translate-middle-y" tabindex="0" aria-label="Previous slide" aria-controls="swiper-wrapper-be4852fe32311f82">
+              <i class="bx bx-chevron-left"></i>
+            </button>
+            <button type="button" id="next-screen" class="btn btn-next btn-icon position-absolute top-50 end-0 me-n5 translate-middle-y" tabindex="0" aria-label="Next slide" aria-controls="swiper-wrapper-be4852fe32311f82">
+              <i class="bx bx-chevron-right"></i>
+            </button>
+
+            <!-- Phone frame -->
+            <div class="position-absolute top-0 start-50 translate-middle-x h-100 w-100 w-md-33 zindex-5">
+              <div class="d-flex bg-repeat-0 bg-size-cover w-100 h-100 mx-auto" style="max-width: 328px; background-image: url(assets/img/uberezpay/phone-frame.png);"></div>
+            </div>
+
+            <!-- Phone screen -->
+            <div class="position-absolute top-0 start-50 translate-middle-x h-100 w-100 w-md-33">
+              <div class="d-flex bg-repeat-0 bg-size-cover w-100 h-100 mx-auto" style="max-width: 328px; background-image: url(assets/img/uberezpay/phone-screen.png);"></div>
+            </div>
+
+            <!-- Swiper slider -->
+            <div class="swiper mobile-app-slider swiper-initialized swiper-horizontal swiper-pointer-events swiper-backface-hidden" data-swiper-options="{
+              &quot;slidesPerView&quot;: 1,
+              &quot;centeredSlides&quot;: true,
+              &quot;loop&quot;: true,
+              &quot;tabs&quot;: true,
+              &quot;pagination&quot;: {
+                &quot;el&quot;: &quot;#swiper-progress&quot;,
+                &quot;type&quot;: &quot;progressbar&quot;
+              },
+              &quot;navigation&quot;: {
+                &quot;prevEl&quot;: &quot;#prev-screen&quot;,
+                &quot;nextEl&quot;: &quot;#next-screen&quot;
+              },
+              &quot;breakpoints&quot;: {
+                &quot;768&quot;: { &quot;slidesPerView&quot;: 3 }
+              }
+            }">
+              <div class="swiper-wrapper" id="swiper-wrapper-be4852fe32311f82" aria-live="polite" style="transition-duration: 0ms; transform: translate3d(-756px, 0px, 0px);"><div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-next" data-swiper-tab="#text-2" data-swiper-slide-index="1" role="group" aria-label="2 / 4" style="width: 378px;">
+                  <img src="assets/img/uberezpay/02.png" class="d-block mx-auto" width="328" alt="Screen">
+                </div><div class="swiper-slide swiper-slide-duplicate" data-swiper-tab="#text-3" data-swiper-slide-index="2" role="group" aria-label="3 / 4" style="width: 378px;">
+                  <img src="assets/img/uberezpay/03.png" class="d-block mx-auto" width="328" alt="Screen">
+                </div><div class="swiper-slide swiper-slide-duplicate swiper-slide-prev" data-swiper-tab="#text-4" data-swiper-slide-index="3" role="group" aria-label="4 / 4" style="width: 378px;">
+                  <img src="assets/img/uberezpay/04.png" class="d-block mx-auto" width="328" alt="Screen">
+                </div>
+
+                <!-- Item -->
+                <div class="swiper-slide swiper-slide-active" data-swiper-tab="#text-1" data-swiper-slide-index="0" role="group" aria-label="1 / 4" style="width: 378px;">
+                  <img src="assets/img/uberezpay/01.png" class="d-block mx-auto" width="328" alt="Screen">
+                </div>
+
+                <!-- Item -->
+                <div class="swiper-slide swiper-slide-next" data-swiper-tab="#text-2" data-swiper-slide-index="1" role="group" aria-label="2 / 4" style="width: 378px;">
+                  <img src="assets/img/uberezpay/02.png" class="d-block mx-auto" width="328" alt="Screen">
+                </div>
+
+                <!-- Item -->
+                <div class="swiper-slide" data-swiper-tab="#text-3" data-swiper-slide-index="2" role="group" aria-label="3 / 4" style="width: 378px;">
+                  <img src="assets/img/uberezpay/03.png" class="d-block mx-auto" width="328" alt="Screen">
+                </div>
+
+                <!-- Item -->
+                <div class="swiper-slide swiper-slide-duplicate-prev" data-swiper-tab="#text-4" data-swiper-slide-index="3" role="group" aria-label="4 / 4" style="width: 378px;">
+                  <img src="assets/img/uberezpay/04.png" class="d-block mx-auto" width="328" alt="Screen">
+                </div>
+
+              <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active" data-swiper-tab="#text-1" data-swiper-slide-index="0" role="group" aria-label="1 / 4" style="width: 378px;">
+                  <img src="assets/img/uberezpay/01.png" class="d-block mx-auto" width="328" alt="Screen">
+                </div><div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-next" data-swiper-tab="#text-2" data-swiper-slide-index="1" role="group" aria-label="2 / 4" style="width: 378px;">
+                  <img src="assets/img/uberezpay/02.png" class="d-block mx-auto" width="328" alt="Screen">
+                </div><div class="swiper-slide swiper-slide-duplicate" data-swiper-tab="#text-3" data-swiper-slide-index="2" role="group" aria-label="3 / 4" style="width: 378px;">
+                  <img src="assets/img/uberezpay/03.png" class="d-block mx-auto" width="328" alt="Screen">
+                </div></div>
+            <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+          </div>
+
+          <!-- Swiper tabs (Description text) -->
+          <div class="row justify-content-center pt-4 mt-2 mt-md-3">
+            <div class="swiper-tabs col-xl-6 col-lg-7 col-md-8 text-center">
+
+              <!-- Text 1 -->
+              <div id="text-1" class="swiper-tab active">
+                <h3 class="h4 pb-1 mb-2">Step 1. Advanced connection management</h3>
+                <p class="mb-0">Consequat ut cras nisl, enim purus in facilisi. Ipsum amet, lectus malesuada risus sollicitudin accumsan. Id sem elit vel vel lectus risus senectus.</p>
+              </div>
+
+              <!-- Text 2 -->
+              <div id="text-2" class="swiper-tab">
+                <h3 class="h4 pb-1 mb-2">Step 2. Latest transaction history</h3>
+                <p class="mb-0">Enim, et amet praesent pharetra. Mi non ante hendrerit amet sed. Arcu sociis tristique quisque hac in consectetur condimentum.</p>
+              </div>
+
+              <!-- Text 3 -->
+              <div id="text-3" class="swiper-tab">
+                <h3 class="h4 pb-1 mb-2">Step 3. Transfers to people from with phone number or QR Code</h3>
+                <p class="mb-0">Proin volutpat mollis egestas. Nam luctus facilisis ultrices. Pellentesque volutpat ligula est. Mattis fermentum, at nec lacus.</p>
+              </div>
+
+              <!-- Text 4 -->
+              <div id="text-4" class="swiper-tab">
+                <h3 class="h4 pb-1 mb-2">Step 4. Card-to-card transfers</h3>
+                <p class="mb-0">A sed lorem felis, pulvinar pharetra. At tempus, vel sed faucibus amet sit elementum sed erat. Id nunc blandit pharetra facilisis.</p>
+              </div>
+              <!-- Text 5 -->
+              <div id="text-4" class="swiper-tab">
+                <h3 class="h4 pb-1 mb-2">Step 5. Safety Broadcasting</h3>
+                <p class="mb-0">A sed lorem felis, pulvinar pharetra. At tempus, vel sed faucibus amet sit elementum sed erat. Id nunc blandit pharetra facilisis.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slider progress -->
+        <div id="swiper-progress" class="swiper-pagination bottom-0 swiper-pagination-progressbar swiper-pagination-horizontal" style="top: auto;"><span class="swiper-pagination-progressbar-fill" style="transform: translate3d(0px, 0px, 0px) scaleX(0.25) scaleY(1); transition-duration: 300ms;"></span></div>
+      </section>
+
+      <section class="container pt-5 pb-2 pb-md-3 py-lg-5">
+        <div class="row align-items-center my-3 py-md-3 py-lg-5">
+          <div class="col-md-6 col-xl-5 offset-lg-1 offset-xl-2 order-md-2 mb-2 mb-md-0 pb-4 pb-md-0">
+            <div class="position-relative mx-auto mx-md-0" style="max-width: 469px;">
+              <img src="assets/img/uberezpay/screen01.png" class="rellax d-block" alt="Screen" data-rellax-percentage="0.5" data-rellax-speed="-0.5" data-disable-parallax-down="md" style="transform: translate3d(-10px, -1px, 0px);">
+              <div class="rellax position-absolute top-0 end-0 w-100 h-100" data-rellax-percentage="0.5" data-rellax-speed="0.75" data-disable-parallax-down="md" style="transform: translate3d(14px, 1px, 0px);">
+                <img src="assets/img/uberezpay/screen02.png" alt="Screen">
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-5 col-xl-4 offset-xl-1 order-md-1 pb-md-4">
+            <h2 class="pb-3">Make your money transfer simple and clear</h2>
+            <ul class="list-unstyled pb-3 mb-3">
+              <li class="d-flex align-items-center mb-2">
+                <i class="bx bx-check-circle fs-xl text-primary me-2"></i>
+                Banking transactions are free for you
+              </li>
+              <li class="d-flex align-items-center mb-2">
+                <i class="bx bx-check-circle fs-xl text-primary me-2"></i>
+                No monthly cash commission
+              </li>
+              <li class="d-flex align-items-center mb-2">
+                <i class="bx bx-check-circle fs-xl text-primary me-2"></i>
+                Manage payments and transactions online
+              </li>
+            </ul>
+            <a href="#" class="btn btn-primary">
+              Learn more
+              <i class="bx bx-right-arrow-alt fs-xl ms-2 me-n1"></i>
+            </a>
+          </div>
+        </div>
+        <div class="row align-items-center mt-2 mt-md-0 pt-5 pt-md-4 pt-lg-0 pb-md-3 pb-lg-5">
+          <div class="col-md-6 col-lg-5 offset-xl-1 mb-2 mb-md-0 pb-4 pb-md-0">
+            <div class="position-relative mx-auto mx-md-0" style="max-width: 462px;">
+              <img src="assets/img/uberezpay/screen03.png" class="rellax d-block" alt="Screen" data-rellax-percentage="0.5" data-rellax-speed="-0.5" data-disable-parallax-down="md" style="transform: translate3d(9px, -20px, 0px);">
+              <div class="rellax position-absolute top-0 end-0 w-100 h-100 me-md-n3" data-rellax-percentage="0.5" data-rellax-speed="0.75" data-disable-parallax-down="md" style="transform: translate3d(-13px, 30px, 0px);">
+                <img src="assets/img/uberezpay/screen04.png" alt="Screen">
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-xl-5 offset-lg-1">
+            <h2 class="pb-3">Receive payment from international bank details</h2>
+            <div class="row row-cols-1 row-cols-sm-2 text-start pb-3">
+              <div class="col pb-4">
+                <div class="d-table bg-light rounded-3 flex-shrink-0 p-3 mb-3">
+                  <img src="assets/img/uberezpay/payments.svg" alt="Easy Payments">
+                </div>
+                <p class="mb-0">Manage your payments online. Mollis congue egestas egestas fermentum fames.</p>
+              </div>
+              <div class="col pb-4">
+                <div class="d-table bg-light rounded-3 flex-shrink-0 p-3 mb-3">
+                  <img src="assets/img/uberezpay/cashback.svg" alt="Regular Cashback">
+                </div>
+                <p class="mb-0">A elementur and imperdiet enim, pretium etiam facilisi aenean quam mauris.</p>
+              </div>
+            </div>
+            <a href="#" class="btn btn-primary">
+              Learn more
+              <i class="bx bx-right-arrow-alt fs-xl ms-2 me-n1"></i>
+            </a>
+          </div>
+        </div>
+        <!-- Extra spacing for dark mode only -->
+        <div class="pt-5 d-none d-dark-mode-block"></div>
+      </section>
+      <!-- TemplateEndEditable -->
+	  
+	  
+	  
+<footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+    <p class="col-md-2 mb-0 text-muted">© 2022 <strong>AE-PPV, Inc.</strong></p>
+
+    <a href="/" class="col-md-3 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+      <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+    </a>
+
+    <ul class="nav col-md-7 justify-content-end">
+      <li class="nav-item"><a href="/browse-escorts.html" class="nav-link px-2 text-muted">Browse Escorts</a></li>
+      <li class="nav-item"><a href="/memberships.html" class="nav-link px-2 text-muted">Memberships</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Boober</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Register</a></li>
+		<li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Login</a></li>
+    </ul>
+  </footer>
+    <!--Being QR Scan-->
+<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasExampleLabel">QR</h5>
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div>
+      QR Quote Request?
+    </div>
+
+  </div>
+</div>
+	  <!-- End QR Scan-->
+	  <!--Begin Search-->
+<div class="offcanvas offcanvas-start" tabindex="-1" id="advancedSearch" aria-labelledby="advancedSearchLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="advancedSearchLabel">Search</h5>
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div>
+    Advanced SideBar Search
+    </div>
+  </div>
+</div>
+	  <!--End Advanced Search-->
+<script type="text/javascript" src="assets/js/bootstrap.bundle.js"></script>
+<script type="text/javascript" src="assets/js/bootstrap.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap.js"></script>
+    <script type="text/javascript" src="assets/js/theme.js"></script>
+    <script type="text/javascript" src="assets/js/rellax.js"></script>
+    <script type="text/javascript" src="assets/js/smooth-scroll.js"></script>
+    <script type="text/javascript" src="assets/js/swiper.js"></script>
+  </body>
+</html>
